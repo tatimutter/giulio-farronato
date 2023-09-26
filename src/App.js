@@ -1,25 +1,70 @@
-import logo from './logo.svg';
-import './App.css';
+import {
+	createBrowserRouter,
+	createRoutesFromElements,
+	Route,
+  RouterProvider,
+} from 'react-router-dom';
+
+import './App.css'
+
+import Home from './Pages/Home';
+import ErrorBoundary from './Components/ErrorBoundary';
+
+//layout
+import AppLayout from './AppLayout';
+
+
+const router = createBrowserRouter(
+	createRoutesFromElements(
+	<>
+ 
+  <Route path="/" element={<AppLayout />} errorElement={<ErrorBoundary />}>
+	
+			
+	<Route path="/" element={<Home />} errorElement={<ErrorBoundary />} />
+				
+			
+		{/*	<Route
+				path="/iscrizioni"
+				element={<Iscrizioni />}
+				action={iscrizioniAction}
+				errorElement={<ErrorBoundary />}
+			/>
+			<Route
+				path="/servizi"
+				element={<Servizi />}
+				errorElement={<ErrorBoundary />}
+			/>
+			<Route
+				path="/richieste"
+				element={<Richieste />}
+				errorElement={<ErrorBoundary />}
+			/>
+			<Route
+				path="/inscrsuccess"
+				element={<InscrSuccess />}
+				errorElement={<ErrorBoundary />}
+			/>
+			<Route
+				path="/informazioni"
+				element={<Informazioni />}
+				errorElement={<ErrorBoundary />}
+			/>
+			<Route
+				path="/reqsuccess"
+				element={<ReqSuccess />}
+				errorElement={<ErrorBoundary />}
+			/> */}
+		</Route>
+	</>	
+	)
+);
 
 function App() {
+ 
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <RouterProvider router={router} />
+  )
 }
 
-export default App;
+export default App
