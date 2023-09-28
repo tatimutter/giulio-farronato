@@ -1,7 +1,7 @@
 import Home from '../Components/Home'
 
 
-function Eng() {
+function It() {
      
         return (
             <>
@@ -37,5 +37,5 @@ function Eng() {
         )
       }
       
-      export default Eng
+      export default It
       

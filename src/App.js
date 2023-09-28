@@ -7,7 +7,7 @@ import {
 
 import './App.css'
 
-import Home from './Pages/Home';
+import It from './Pages/It';
 import Eng from './Pages/Eng'
 import ErrorBoundary from './Components/ErrorBoundary';
 
@@ -22,7 +22,7 @@ const router = createBrowserRouter(
   <Route path="/" element={<AppLayout />} errorElement={<ErrorBoundary />}>
 	
 			
-	<Route path="/" element={<Home />} errorElement={<ErrorBoundary />} />
+	<Route path="/" element={<It />} errorElement={<ErrorBoundary />} />
 				
 			
 			<Route

@@ -1,11 +1,34 @@
-function Home() {
+function Home({
+h2,
+h3,
+serv1,
+serv2,
+serv3,
+serv4,
+serv5,
+contact,
+altPic,
+who,
+descr,
+cv,
+linkedIn,
+help,
+item1,
+content1,
+item2,
+content2,
+formIntro,
+contact2,
+send
+}
+) {
  
     return (
       < >
   
     <body>
       
-      <header className="header" style={{display:'block'}}>
+  <header className="header" style={{display:'block'}}>
   
   {/* Hero Start */}
    <div id="hero-area" className="hero-area" >
@@ -13,18 +36,18 @@ function Home() {
       <div className="row align-items-center">
         <div className="col-lg-7 col-md-12 col-sm-12 col-xs-12">
           <div className="contents">
-            <h2 className="head-title">Avvocato Giulio Farronato</h2>
-            <h3>Diritto di famiglia e dell&#39;immigrazione</h3>
-            <p style={{fontSize:'large'}}>Famiglie 
+            <h2 className="head-title">{h2}</h2>
+            <h3>{h3}</h3>
+            <p style={{fontSize:'large'}}>{serv1} 
               <br/>
             LGBTQI+ 
             <br/>
-            Cittadinanza
+            {serv2}
             <br/>
-            Migranti
+            {serv3}
             </p>
             <div className="header-button">
-              <a href="#contactForm" className="btn btn-custom" >Contattami</a>
+              <a href="#contactForm" className="btn btn-custom" >{contact}</a>
               
             </div>
           </div>
@@ -33,7 +56,7 @@ function Home() {
                     
          
         <div className="intro-img" >
-          <img className='img-fluid'alt="Piano americano dell'avvocato Giulio Farronato, a braccia conserte" 
+          <img className='img-fluid'alt={altPic} 
           style={{width:'350px', height:'500px', position:'relative', marginBottom:'-200px'}}
           src="../foto-test-svg.svg"/>
           </div> 
@@ -42,7 +65,7 @@ function Home() {
     </div> 
   </div>
 {/* Hero End */}    
-</header>  
+</header>   
 
 {/* About Section Start */}    
 <div className="about-area section-padding" >
@@ -53,26 +76,19 @@ function Home() {
                 <div>
                   <div className="site-heading">
                     
-                    <h2 className="section-title">Chi sono</h2>
+                    <h2 className="section-title">{who}</h2>
                   </div>
                   <div className="content">
-                    <p>
-                    Sono avvocato presso il foro di Vicenza ed esercito principalmente in diritto di famiglia e diritto dell&#39;immigrazione. Tra le altre aree di cui mi occupo in particolare c&#39;è il diritto antiscriminatorio e la tutela della persone LGBT*, tra cui i percorsi di rettifica anagrafica e affermazione di genere per le persone trans.
-                    Sul tema ho scritto un podcast “Queer to Queer”, dove parlo di minoranze nel mondo LGBT+.
-  
-                    Attualmente, sono assegnista di ricerca presso l&#39;università di Padova in diritto internazionale per il progetto UNI4Justice.
-  
-                    In passato ho studiato al Master 2 <q>Cooperazione internazionale e diritto delle ONG</q> presso Paris Cité Sorbonne e a Fribourg in Svizzera dove mi sono dedicato al diritto dell&#39;immigrazione e delle nuove tecnologie a cui è seguito un corso di perfezionamento in Coding e Legal Tech dell&#39;Università degli studi di Milano con una tesi sulla Blockchain applicata al diritto d&#39;autore.
-                    Contribuisco attivamente come socio all&#39;associazione Antigone in qualità membro del team del difensore civico per la tutela delle persone ristrette, in Rete Lenford per la tutela della persone LGBT+ e in CAIT e ASGI per quanto riguarda le persone migranti. 
+                    <p>{descr} 
                     </p>
-                    <a href="#" className="btn btn-custom mt-3">Scarica il mio CV</a>
+                    <a href="#" className="btn btn-custom mt-3">{cv}</a>
                   </div>
                 </div>
               </div>
             </div>
             <div className="col-lg-6 col-md-12 col-xs-12 wow fadeInRight" data-wow-delay="0.3s">
               <img className="img-fluid" src="../LinkedIn-test.png" alt="" style={{marginTop:'60px', marginBottom:'50px'}}></img>
-              <a href="#" className="btn btn-custom mt-3">Visita il mio LinkedIn</a>
+              <a href="#" className="btn btn-custom mt-3">{linkedIn}</a>
             </div>
           </div>
         </div>
@@ -83,7 +99,7 @@ function Home() {
       <section id="services" className="services-area section-padding">
         <div className="container">
           <div className="section-header text-center">
-            <h2 className="section-title wow fadeInDown" data-wow-delay="0.3s">Come posso aiutarti</h2>
+            <h2 className="section-title wow fadeInDown" data-wow-delay="0.3s">{help}</h2>
             <div className="shape wow fadeInDown" data-wow-delay="0.3s"></div>
           </div>
           <div className="row">
@@ -94,8 +110,8 @@ function Home() {
                   <i className="lni-cog"></i>
                 </div>
                 <div className="services-content">
-                  <h3><a href="#">Diritto di famiglia</a></h3>
-                  <p>Testo a caso</p>
+                  <h3><a href="#">{item1}</a></h3>
+                  <p>{content1}</p>
                 </div>
               </div>
             </div>
@@ -106,8 +122,8 @@ function Home() {
                   <i className="lni-stats-up"></i>
                 </div>
                 <div className="services-content">
-                  <h3><a href="#">Diritto dell&#39;immigrazione</a></h3>
-                  <p>Testo a caso</p>
+                  <h3><a href="#">{item2}</a></h3>
+                  <p>{content2}</p>
                 </div>
               </div>
             </div>
@@ -175,7 +191,7 @@ function Home() {
             <div className="col-lg-7 col-md-12 col-sm-12">
               
               <div className="contact-block">
-              <div style={{marginBottom:'20px'}}> <i>Spiegazione su riempimento formulario Spiegazione su riempimento formulario Spiegazione su riempimento formulario Spiegazione su riempimento formulario </i> </div>
+              <div style={{marginBottom:'20px'}}> <i>{formIntro} </i> </div>
                 <form id="contactForm">
                   <div className="row">
                     <div className="col-md-6">
@@ -202,7 +218,7 @@ function Home() {
                         <div className="help-block with-errors"></div>
                       </div>
                       <div className="submit-button text-left">
-                        <button className="btn btn-custom" id="form-submit" type="submit">Invia messaggio</button>
+                        <button className="btn btn-custom" id="form-submit" type="submit">{send}</button>
                         <div id="msgSubmit" className="h3 text-center hidden"></div> 
                         <div className="clearfix"></div> 
                       </div>
