@@ -11,7 +11,7 @@ function Footer() {
             <div className="row">
               <div className="col-lg-3 col-md-3 col-sm-3 col-xs-1 col-mb-2" style={{paddingTop:'30px'}}>
                 <div className="widget">
-                  <h3 className="footer-logo"><img style={{width:'105px'}} src="../logo.png" alt=""></img></h3>
+                  <h3 className="footer-logo"><img style={{width:'105px'}} src="../logo.svg" alt=""></img></h3>
                   <div className="textwidget" style={{paddingLeft:'10px'}}>
                 	<p>Informazioni legali e fiscali  Informazioni legali e fiscali  Informazioni legali e fiscali  </p>
                   </div>

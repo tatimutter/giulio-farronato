@@ -8,6 +8,7 @@ import {
 import './App.css'
 
 import Home from './Pages/Home';
+import Eng from './Pages/Eng'
 import ErrorBoundary from './Components/ErrorBoundary';
 
 //layout
@@ -24,12 +25,12 @@ const router = createBrowserRouter(
 	<Route path="/" element={<Home />} errorElement={<ErrorBoundary />} />
 				
 			
-		{/*	<Route
-				path="/iscrizioni"
-				element={<Iscrizioni />}
-				action={iscrizioniAction}
+			<Route
+				path="/eng"
+				element={<Eng />}			
 				errorElement={<ErrorBoundary />}
 			/>
+			{/*
 			<Route
 				path="/servizi"
 				element={<Servizi />}
