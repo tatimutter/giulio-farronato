@@ -21,7 +21,10 @@ formIntro,
 contact2,
 send
 }
-) {
+) 
+
+
+{
  
     return (
       < >
@@ -68,7 +71,7 @@ send
 </header>   
 
 {/* About Section Start */}    
-<div className="about-area section-padding" >
+<div id="about-section" className="about-area section-padding" >
         <div className="container">
           <div className="row">
             <div className="col-lg-6 col-md-12 col-xs-12 info">
@@ -181,8 +184,8 @@ send
      
   
   {/* Contact Section Start */}
-  <section id="contact" className="section-padding contact-area">    
-        <div className="container">
+  <section id="contact-section" className="section-padding contact-area">    
+        <div   className="container">
           <div className="section-header text-center">          
             <h2 className="section-title wow fadeInDown" data-wow-delay="0.3s">Contattami</h2>
             <div className="shape wow fadeInDown" data-wow-delay="0.3s"></div>
@@ -190,7 +193,7 @@ send
           <div className="row contact-form-area wow fadeInUp" data-wow-delay="0.3s">   
             <div className="col-lg-7 col-md-12 col-sm-12">
               
-              <div className="contact-block">
+              <div  className="contact-block">
               <div style={{marginBottom:'20px'}}> <i>{formIntro} </i> </div>
                 <form id="contactForm">
                   <div className="row">
@@ -240,28 +243,48 @@ send
   
   
       {/*  Top Arrow  */}
-      <a href="#" className="back-to-top">
+      {/* <a href="#" className="back-to-top">
         <i className="lni-arrow-up"></i>
-      </a>
+      </a> */}
+
       
-     JS per top arrow
-     {/*  var offset = 200;
-        var duration = 500;
-        $(window).scroll(function() {
-          if ($(this).scrollTop() > offset) {
-            $('.back-to-top').fadeIn(400);
-          } else {
-            $('.back-to-top').fadeOut(400);
-          }
-        });
+ {/*   JS per top arrow */}
+{/* const offset = 200;
+  const duration = 500;
+  const [showButton, setShowButton] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > offset) {
+        setShowButton(true);
+      } else {
+        setShowButton(false);
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    
+  }, []); 
+
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth',
+    }); 
   
-        $('.back-to-top').on('click',function(event) {
-          event.preventDefault();
-          $('html, body').animate({
-            scrollTop: 0
-          }, 600);
-          return false;
-        }); */}
+ */}     
+ {/*  <div>
+      {showButton && (
+        <button className="back-to-top" onClick={scrollToTop}>
+          Back to Top
+        </button>
+
+      )}
+      </div> */}
+  
 
 
       

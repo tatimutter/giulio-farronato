@@ -15,7 +15,7 @@ function Navbar() {
   {/* Header Start */}
   
        
-  <nav className="navbar navbar-expand-md navbar-expand-lg bg-inverse fixed-top scrolling-navbar">
+  <nav className="navbar navbar-expand-md navbar-expand-lg bg-inverse fixed-top scrolling-navbar" style={{height: '33.05 !important'}}>
     <div className="container">
 
   {/*   <NavLink
@@ -40,10 +40,15 @@ function Navbar() {
         <i className="lni-menu"></i>
       </button>
       <div className="collapse navbar-collapse" id="navbarCollapse">
-        <ul className="navbar-nav  w-90 justify-content-end clearfix" style={{marginRight: '4%', marginLeft:'50%'}}>
-          <li className="nav-item active">
+        <ul className="navbar-nav  w-90 justify-content-end clearfix" style={{marginRight: '4%', marginLeft:'35%'}}>
+          <li className="nav-item">
             <a className="nav-link" href="#hero-area">
               Home
+            </a>
+          </li>
+          <li className="nav-item">
+            <a className="nav-link" href="#about-section">
+              Chi sono
             </a>
           </li>
           <li className="nav-item">
@@ -51,21 +56,18 @@ function Navbar() {
               Come posso aiutarti
             </a>
           </li>
-          {/* <li className="nav-item">
-            <a className="nav-link" href="#team">
-              Materia 2
+           <li className="nav-item">
+            <a className="nav-link" href="#contact-section">
+              Contatti
             </a>
           </li>
+          {/*
           <li className="nav-item">
             <a className="nav-link" href="#pricing">
               Materia 3
             </a>
           </li> */}
-          <li className="nav-item">
-            <a className="nav-link" href="#about-section">
-              Chi sono
-            </a>
-          </li>
+         
          
          </ul>
          <ul className="navbar-nav w-10 justify-content-end clearfix" style={{marginLeft: '5%'}}> 
