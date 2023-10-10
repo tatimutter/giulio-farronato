@@ -23,31 +23,29 @@ send
 }
 ) 
 
-
 {
  
     return (
-      < >
-  
-    <body>
+      <body>
       
   <header className="header" style={{display:'block'}}>
   
   {/* Hero Start */}
-   <div id="hero-area" className="hero-area" >
+   <div id="hero-area" className="hero-area"  style={{paddingTop:'7em'}}>
     <div className="container">      
       <div className="row align-items-center">
         <div className="col-lg-7 col-md-12 col-sm-12 col-xs-12">
           <div className="contents">
             <h2 className="head-title">{h2}</h2>
             <h3>{h3}</h3>
-            <p style={{fontSize:'large'}}>{serv1} 
-              <br/>
-            LGBTQI+ 
-            <br/>
-            {serv2}
-            <br/>
-            {serv3}
+            <p style={{fontSize:'1.3rem', paddingTop:'0.2em', paddingBottom:'0.5em'}}>{serv1} </p>
+              
+              <p style={{fontSize:'1.3rem', paddingBottom:'0.5em'}}>
+             LGBTQI+ </p>
+            
+            <p style={{fontSize:'1.3rem', paddingBottom:'0.5em'}}>  {serv2}</p>
+            
+            <p style={{fontSize:'1.3rem', paddingBottom:'0.5em'}}>  {serv3}
             </p>
             <div className="header-button">
               <a href="#contactForm" className="btn btn-custom" >{contact}</a>
@@ -98,8 +96,8 @@ send
       </div>
   {/* About Section End */}
   
-  {/* Services Section */}
-      <section id="services" className="services-area section-padding">
+  {/* Services Section */} {/* AUMENTARE VH!!! */}
+      <section id="services" className="services-area section-padding" style={{height:'100vh'}}>
         <div className="container">
           <div className="section-header text-center">
             <h2 className="section-title wow fadeInDown" data-wow-delay="0.3s">{help}</h2>
@@ -233,7 +231,7 @@ send
             <div className="col-lg-5 col-md-12 col-xs-12">
               <div className="map">
                 {/* <object style={{border:'0', height: '280px', width: '100%'}}data="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d34015.943594576835!2d-106.43242624069771!3d31.677719472407432!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86e75d90e99d597b%3A0x6cd3eb9a9fcd23f1!2sCourtyard+by+Marriott+Ciudad+Juarez!5e0!3m2!1sen!2sbd!4v1533791187584"></object> */}
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d698.5683967163674!2d11.539421906843105!3d45.544821664851064!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x477f316332c9bc8d%3A0x5c833604f287c2f8!2sViale%20Roma%2C%2022%2C%2036100%20Vicenza%20VI%2C%20Italy!5e0!3m2!1sen!2sus!4v1695225466006!5m2!1sen!2sus" width="600" height="450" style={{border:'0'}} allowfullscreen loading="lazy"></iframe>
+                <iframe title='indirizzo in Google Maps' src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d698.5683967163674!2d11.539421906843105!3d45.544821664851064!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x477f316332c9bc8d%3A0x5c833604f287c2f8!2sViale%20Roma%2C%2022%2C%2036100%20Vicenza%20VI%2C%20Italy!5e0!3m2!1sen!2sus!4v1695225466006!5m2!1sen!2sus"  style={{border:'0', width:'100%', height:'60vh'}} allowFullScreen loading="lazy"></iframe>
               </div>
             </div>
           </div>
@@ -290,7 +288,7 @@ send
       
        
   </body>
-      </>
+      
     )
   }
   

@@ -25,11 +25,11 @@ const router = createBrowserRouter(
 	<Route path="/" element={<It />} errorElement={<ErrorBoundary />} />
 				
 			
-			<Route
+	<Route
 				path="/eng"
 				element={<Eng />}			
 				errorElement={<ErrorBoundary />}
-			/>
+	/>
 			{/*
 			<Route
 				path="/servizi"
