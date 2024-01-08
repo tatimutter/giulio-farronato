@@ -9,14 +9,22 @@ serv5,
 contact,
 altPic,
 who,
-descr,
-cv,
+descr1,
+descr2,
+descr3,
+descr4,
+descr5,
+descr6,
+descr7,
+mail,
 linkedIn,
 help,
 item1,
 content1,
 item2,
 content2,
+item3,
+content3,
 formIntro,
 contact2,
 send
@@ -38,15 +46,9 @@ send
           <div className="contents">
             <h2 className="head-title">{h2}</h2>
             <h3>{h3}</h3>
-            <p style={{fontSize:'1.3rem', paddingTop:'0.2em', paddingBottom:'0.5em'}}>{serv1} </p>
-              
-              <p style={{fontSize:'1.3rem', paddingBottom:'0.5em'}}>
-             LGBTQI+ </p>
-            
+            {/* <p style={{fontSize:'1.3rem', paddingTop:'0.2em', paddingBottom:'0.5em'}}>{serv1} </p>
             <p style={{fontSize:'1.3rem', paddingBottom:'0.5em'}}>  {serv2}</p>
-            
-            <p style={{fontSize:'1.3rem', paddingBottom:'0.5em'}}>  {serv3}
-            </p>
+            <p style={{fontSize:'1.3rem', paddingBottom:'0.5em'}}>  {serv3}    </p> */}
             <div className="header-button">
               <a href="#contactForm" className="btn btn-custom" >{contact}</a>
               
@@ -59,7 +61,7 @@ send
         <div className="intro-img" >
           <img className='img-fluid'alt={altPic} 
           style={{width:'350px', height:'500px', position:'relative', marginBottom:'-200px'}}
-          src="../foto-test-svg.svg"/>
+          src="../avv-giulio-farronato.png"/>
           </div> 
           </div> 
       </div> 
@@ -80,9 +82,21 @@ send
                     <h2 className="section-title">{who}</h2>
                   </div>
                   <div className="content">
-                    <p>{descr} 
+                    <p style={{fontSize:"larger"}}> {descr1} 
                     </p>
-                    <a href="#" className="btn btn-custom mt-3">{cv}</a>
+                    {descr2} 
+                    <br/>
+                    {descr3} 
+                    <br/> <br/>
+                    {descr4} 
+                    <br/><br/>
+                    <p style={{fontWeight:"bold", fontSize:"medium"}}>{descr5}</p> 
+                    
+                    {/* <p>{descr6} 
+                    </p>
+                    <p>{descr7} 
+                    </p> */}
+                    <a href="#" className="btn btn-custom mt-3">{mail}</a>
                   </div>
                 </div>
               </div>
@@ -105,7 +119,7 @@ send
           </div>
           <div className="row">
             {/* <!-- Services item --> */}
-            <div className="col-md-6 col-lg-6 col-xs-12">
+            <div className="col-md-4 col-lg-4 col-xs-12">
               <div className="services-item wow fadeInRight" data-wow-delay="0.3s">
                 <div className="icon">
                   <i className="lni-cog"></i>
@@ -117,7 +131,7 @@ send
               </div>
             </div>
             {/* <!-- Services item --> */}
-            <div className="col-md-6 col-lg-6 col-xs-12">
+            <div className="col-md-4 col-lg-4 col-xs-12">
               <div className="services-item wow fadeInRight" data-wow-delay="0.6s">
                 <div className="icon">
                   <i className="lni-stats-up"></i>
@@ -129,17 +143,17 @@ send
               </div>
             </div>
            {/*  <!-- Services item --> */}
-            {/* <div className="col-md-6 col-lg-4 col-xs-12"> 
+            <div className="col-md-4 col-lg-4 col-xs-12"> 
               <div className="services-item wow fadeInRight" data-wow-delay="0.9s">
                 <div className="icon">
                   <i className="lni-users"></i>
                 </div>
                 <div className="services-content">
-                  <h3><a href="#">Diritto antidiscriminatorio</a></h3>
-                  <p>Testo a caso</p>
+                  <h3><a href="#">{item3}</a></h3>
+                  <p>{content3}</p>
                 </div>
               </div>
-            </div>*/}
+            </div>
            {/*  <!-- Services item --> */}
             {/* <div className="col-md-6 col-lg-4 col-xs-12">
               <div className="services-item wow fadeInRight" data-wow-delay="1.2s">
@@ -152,30 +166,7 @@ send
                 </div>
               </div>
             </div> */}
-           {/*  <!-- Services item --> */}
-           {/*  <div className="col-md-6 col-lg-4 col-xs-12">
-              <div className="services-item wow fadeInRight" data-wow-delay="1.5s">
-                <div className="icon">
-                  <i className="lni-mobile"></i>
-                </div>
-                <div className="services-content">
-                  <h3><a href="#">App Development</a></h3>
-                  <p>Ut maximus enim dolor. Aenean auctor risus eget tincidunt lobortis. Donec tincidunt bibendum gravida. </p>
-                </div>
-              </div>
-            </div> */}
-           {/*  <!-- Services item --> */}
-            {/* <div className="col-md-6 col-lg-4 col-xs-12">
-              <div className="services-item wow fadeInRight" data-wow-delay="1.8s">
-                <div className="icon">
-                  <i className="lni-rocket"></i>
-                </div>
-                <div className="services-content">
-                  <h3><a href="#">User Friendly interface</a></h3>
-                  <p>Ut maximus enim dolor. Aenean auctor risus eget tincidunt lobortis. Donec tincidunt bibendum gravida. </p>
-                </div>
-              </div>
-            </div> */}
+          
           </div>
         </div>
       </section>

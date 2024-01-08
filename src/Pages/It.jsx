@@ -6,28 +6,27 @@ function It() {
         return (
             <>
          <Home 
-        h2=' Avvocato Giulio Farronato'
+        h2='Avvocato Giulio Farronato'
         h3='Diritto di famiglia e dell&#39;immigrazione'
-        serv1='Famiglie'
-        serv2= 'Cittadinanza'
-        serv3='Migranti'
         contact='Contattami'
         altPic='Piano americano dell&#39;avvocato Giulio Farronato, a braccia conserte'
         who= 'Chi sono'
-        descr='Sono avvocato presso il foro di Vicenza ed esercito principalmente in diritto di famiglia e diritto dell&#39;immigrazione. Tra le altre aree di cui mi occupo in particolare c&#39;è il diritto antiscriminatorio e la tutela della persone LGBT*, tra cui i percorsi di rettifica anagrafica e affermazione di genere per le persone trans.
-        Sul tema ho scritto un podcast “Queer to Queer”, dove parlo di minoranze nel mondo LGBT+.
-
-        Attualmente, sono assegnista di ricerca presso l&#39;università di Padova in diritto internazionale per il progetto UNI4Justice.
-
-        In passato ho studiato al Master 2 Cooperazione internazionale e diritto delle ONG presso Paris Cité Sorbonne e a Fribourg in Svizzera dove mi sono dedicato al diritto dell&#39;immigrazione e delle nuove tecnologie a cui è seguito un corso di perfezionamento in Coding e Legal Tech dell&#39;Università degli studi di Milano con una tesi sulla Blockchain applicata al diritto d&#39;autore.
-        Contribuisco attivamente come socio all&#39;associazione Antigone in qualità membro del team del difensore civico per la tutela delle persone ristrette, in Rete Lenford per la tutela della persone LGBT+ e in CAIT e ASGI per quanto riguarda le persone migranti.'
-        cv='Scarica il mio CV'
+        descr1='Sono avvocato presso il foro di Vicenza ed esperto in diritti umani e protezione internazionale presso la Prefettura di Treviso.'
+        descr2='I temi di cui mi occupo principalmente riguardano il diritto di famiglia, dell&#39;immigrazione e della tutela delle persone LGBT+.'
+        descr3= 'Ho maturato esperienza presso le giurisdizioni ordinarie, le sezioni specializzate e le giurisdizioni amministrative. In passato sono stato assegnista di ricerca presso l&#39;università di Padova in materia di diritto internazionale.'
+        descr4= 'Sono socio delle associazioni ASGI - Associazione Studi Giuridici Immigrazione e Rete Lenford-Avvocatura per i diritti LGBT+ attraverso cui ho conosciuto avvocati e avvocate con cui collaboro frequentemente e dal 2023 sono Osservatore per le condizioni di detenzione e membro del difensore civico per l&#39;associazione Antigone.'       descr5= 'Se vuoi approfondire le mie competenze puoi scrivermi o guardare il mio profilo LinkedIn.'
+        mail='Scrivimi'
         linkedIn='Visita il mio LinkedIn'
         help='Come posso aiutarti'
-        item1='Diritto di famiglia'
-        content1='testo'
-        item2='Diritto dell&#39;immigrazione'
-        content2='testo'
+        item1='Diritto di Famiglia'
+        content1='Mi occupo di tutte le pratiche più comuni del diritto di famiglia: separazioni, divorzi, affidamento e mantenimento dei figli, eredità, riconoscimento del figlio, procedure di interdizione, inabilitazione e nomina di amministratori di sostegno. Ho una particolare esperienza in procedimenti relativi a minori, donne vittime di violenze e abusi e persone in situazioni di svantaggio sociale. 
+        In molti casi, mi sono dovuto occupare di pratiche di diritto di famiglia con risvolti relativi al diritto privato internazionale, materia con cui ho maturato esperienza.'
+        item2='Diritto dell&#39;Immigrazione'
+        content2='Ho una lunga esperienza in questo ambito che ho iniziato a seguire fin dagli studi universitari. Mi occupo sia dell&#39;ambito giudiziale che stra giudiziale. Alcuni degli ambiti di cui mi occupo sono rilascio, conversione e rinnovo dei permessi di soggiorno per privati ma anche per aziende (come ad esempio nei casi di lavoratori altamente specializzati, distacchi di azienda o c.d. flussi). Seguo pratiche per il riconoscimento della cittadinanza e la tutela di persone richiedenti protezione internazionale. 
+        Sono consulente in tematiche di diritto dell&#39;immigrazione per alcune aziende così come per alcuni enti del terzo settore.'
+        item3='Minoranze e diritti LGBT+'
+        content3='Mi sono occupato spesso di casi che includono minoranze e le relative discriminazioni che devono affrontare. In particolare, per quanto riguarda le persone trans mi occupo di cause di affermazione di genere e rettifica del nome. '
+
         contact2='Contattami'
         formIntro='Spiegazione su riempimento formulario Spiegazione su riempimento formulario Spiegazione su riempimento formulario Spiegazione su riempimento formulario '
         send='Invia messaggio'
