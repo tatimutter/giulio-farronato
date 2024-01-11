@@ -1,3 +1,7 @@
+import React, {useState} from 'react';
+
+
+
 function Home({
 h2,
 h3,
@@ -17,7 +21,7 @@ descr5,
 descr6,
 descr7,
 mail,
-linkedIn,
+linkedIn, 
 help,
 item1,
 content1,
@@ -33,22 +37,32 @@ send
 
 {
  
+  const [show, setShow] = useState(Array(7).fill(false));
+
+	
+
+	function toggle(index) {
+		const updatedShow = [...show];
+		updatedShow[index] = !updatedShow[index];
+		setShow(updatedShow);
+		
+	  }
     return (
       <body>
-      
+
+
+    
   <header className="header" style={{display:'block'}}>
   
-  {/* Hero Start */}
-   <div id="hero-area" className="hero-area"  style={{paddingTop:'7em'}}>
+  {/* Hero start */}
+    <div id="hero-area" className="hero-area"  style={{paddingTop:'7em'}}>
     <div className="container">      
       <div className="row align-items-center">
         <div className="col-lg-7 col-md-12 col-sm-12 col-xs-12">
           <div className="contents">
             <h2 className="head-title">{h2}</h2>
             <h3>{h3}</h3>
-            {/* <p style={{fontSize:'1.3rem', paddingTop:'0.2em', paddingBottom:'0.5em'}}>{serv1} </p>
-            <p style={{fontSize:'1.3rem', paddingBottom:'0.5em'}}>  {serv2}</p>
-            <p style={{fontSize:'1.3rem', paddingBottom:'0.5em'}}>  {serv3}    </p> */}
+            
             <div className="header-button">
               <a href="#contactForm" className="btn btn-custom" >{contact}</a>
               
@@ -67,11 +81,11 @@ send
       </div> 
     </div> 
   </div>
-{/* Hero End */}    
+   {/* Hero end */}
 </header>   
 
 {/* About Section Start */}    
-<div id="about-section" className="about-area section-padding" >
+ <div id="about-section" className="about-area section-padding" >
         <div className="container">
           <div className="row">
             <div className="col-lg-6 col-md-12 col-xs-12 info">
@@ -92,10 +106,6 @@ send
                     <br/><br/>
                     <p style={{fontWeight:"bold", fontSize:"medium"}}>{descr5}</p> 
                     
-                    {/* <p>{descr6} 
-                    </p>
-                    <p>{descr7} 
-                    </p> */}
                     <a href="#" className="btn btn-custom mt-3">{mail}</a>
                   </div>
                 </div>
@@ -107,7 +117,7 @@ send
             </div>
           </div>
         </div>
-      </div>
+      </div> 
   {/* About Section End */}
   
   {/* Services Section */} {/* AUMENTARE VH!!! */}

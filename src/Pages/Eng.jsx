@@ -1,3 +1,5 @@
+import Hero from '../Components/Hero'
+import About from '../Components/About'
 import Home from '../Components/Home'
 
 
@@ -5,16 +7,16 @@ function Eng() {
      
         return (
             <>
-         <Home 
+            
+         <Hero 
        h2=' Avvocato Giulio Farronato'
-        h3='Diritto di famiglia e dell&#39;immigrazione'
-        serv1='Famiglie'
-        serv2= 'Cittadinanza'
-        serv3='Migranti'
+        h3='Diritto di famiglia e dell&#39;immigrazione' 
         contact='Contattami'
-        altPic='Piano americano dell&#39;avvocato Giulio Farronato, a braccia conserte'
+        altPic='Piano americano dell&#39;avvocato Giulio Farronato, a braccia conserte' />
+        <About
+                
         who= 'Chi sono'
-        descr=' Sono avvocato presso il foro di Vicenza ed esercito principalmente in diritto di famiglia e diritto dell&#39;immigrazione. Tra le altre aree di cui mi occupo in particolare c&#39;è il diritto antiscriminatorio e la tutela della persone LGBT*, tra cui i percorsi di rettifica anagrafica e affermazione di genere per le persone trans.
+        descr='Sono avvocato presso il foro di Vicenza ed esercito principalmente in diritto di famiglia e diritto dell&#39;immigrazione. Tra le altre aree di cui mi occupo in particolare c&#39;è il diritto antiscriminatorio e la tutela della persone LGBT*, tra cui i percorsi di rettifica anagrafica e affermazione di genere per le persone trans.
         Sul tema ho scritto un podcast “Queer to Queer”, dove parlo di minoranze nel mondo LGBT+.
 
         Attualmente, sono assegnista di ricerca presso l&#39;università di Padova in diritto internazionale per il progetto UNI4Justice.
@@ -31,6 +33,9 @@ function Eng() {
         contact2='Contattami'
         formIntro='Spiegazione su riempimento formulario Spiegazione su riempimento formulario Spiegazione su riempimento formulario Spiegazione su riempimento formulario '
         send='Invia messaggio'
+        serv1='Famiglie'
+        serv2= 'Cittadinanza'
+        serv3='Migranti'
         />
     
           </>
