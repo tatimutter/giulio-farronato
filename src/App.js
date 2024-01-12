@@ -7,7 +7,7 @@ import {
 
 import './App.css'
 
-import It from './Pages/It';
+import It from './Pages/Home';
 import Eng from './Pages/Eng'
 import ErrorBoundary from './Components/ErrorBoundary';
 
