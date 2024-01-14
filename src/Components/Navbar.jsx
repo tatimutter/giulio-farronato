@@ -12,18 +12,8 @@ function Navbar() {
   {/* Header Start */}
   
        
-  <nav className="navbar navbar-expand-md navbar-expand-lg bg-inverse fixed-top scrolling-navbar" style={{height: '33.05 !important'}}>
+  <nav className="navbar navbar-expand-md navbar-expand-lg bg-inverse fixed-top scrolling-navbar" >
     <div className="container">
-
-  {/*   <NavLink
-					to="/"
-					exact='true'
-					className={({ isActive }) =>
-						isActive ? 'active' : 'nav-link'
-					}><img style={{width:'65px'}} src="../logo_chiaro.svg" alt="logo avvocato Giulio Ferronato"/>
-    </NavLink> */}
-
-
 
       <NavLink
 				
@@ -44,12 +34,12 @@ function Navbar() {
       <div className="collapse navbar-collapse" id="navbarCollapse">
         <ul className="navbar-nav  w-90 justify-content-end clearfix" style={{marginRight: '4%', marginLeft:'35%'}}>
           <li className="nav-item">
-            <a className="nav-link" href="#hero-area" style={{fontWeight:'bolder'}}>
+            <a className="nav-link" href="#hero-area">
               Home
             </a>
           </li>
           <li className="nav-item">
-            <a className="nav-link" href="#about-section" style={{fontWeight:'bold'}}>
+            <a className="nav-link" href="#about-section">
               Chi sono
             </a>
           </li>
@@ -63,13 +53,6 @@ function Navbar() {
               Contatti
             </a>
           </li>
-          {/*
-          <li className="nav-item">
-            <a className="nav-link" href="#pricing">
-              Materia 3
-            </a>
-          </li> */}
-         
          
          </ul>
          <ul className="navbar-nav w-10 justify-content-end clearfix" style={{marginLeft: '5%'}}> 
@@ -81,7 +64,7 @@ function Navbar() {
           exact='true'
           className={({ isActive }) =>
             isActive ? 'active' : 'nav-link'
-          }> IT </NavLink>
+          } > IT </NavLink>
             </li>
          <li className="nav-item">
         <NavLink

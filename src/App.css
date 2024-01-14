@@ -510,7 +510,8 @@ hr {
 }
 
 .services-item .icon {
-  border: 1px solid #f1f1f1;
+  border: 1px solid #46bbc6;
+  background-color: #8C96ED;
   width: 70px;
   height: 70px;
   border-radius: 50%;
@@ -677,7 +678,7 @@ hr {
   font-weight: 400;
   padding: 7px 0;
   cursor: pointer;
-  position: relative;
+  /* position: relative; */
   background: transparent;
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
@@ -730,6 +731,7 @@ hr {
   padding: 10px 0;
   background-color: white;
   box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.1);
+  height: 53.5px !important;
 }
 
 .navbar li.active a.nav-link {
@@ -1368,11 +1370,11 @@ textarea {
 /* Footer Area Start */
 .footer-area {
   position: relative;
-  padding: 150px 0px 0px;
+  padding: 5px 0px 0px;
   background: #fff;
 }
 
-.footer-area .footer-titel {
+.footer-area .footer-title {
   font-size: 18px;
   color: #333333;
   font-weight: 500;

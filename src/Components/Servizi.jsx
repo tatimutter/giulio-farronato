@@ -10,7 +10,8 @@ const Servizi = ({
     content3
 }) => {
   return (
-    <div><section id="services" className="services-area section-padding" style={{height:'100vh'}}>
+    <div>
+        <section id="services" className="services-area section-padding" >
     <div className="container">
       <div className="section-header text-center">
         <h2 className="section-title wow fadeInDown" data-wow-delay="0.3s">{help}</h2>
