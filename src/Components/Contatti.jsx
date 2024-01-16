@@ -15,7 +15,7 @@ const Contatti = (
       </div>
       <div className="row contact-form-area wow fadeInUp" data-wow-delay="0.3s">   
         <div className="col-lg-7 col-md-12 col-sm-12">
-          
+
           <div  className="contact-block">
           <div style={{marginBottom:'20px'}}> <i>{formIntro} </i> </div>
             <form id="contactForm">
@@ -82,7 +82,7 @@ const Contatti = (
                 <span>+39 1234 567 890</span>
                 </li>
                 <br />
-                
+
                 {/* Mail */}
                 <li>
                 <a href="mailto:giulio@mail.com">

@@ -13,6 +13,7 @@ function Navbar() {
   
        
   <nav className="navbar navbar-expand-md navbar-expand-lg bg-inverse fixed-top scrolling-navbar" >
+  
     <div className="container">
 
       <NavLink
@@ -31,7 +32,7 @@ function Navbar() {
       />
     </svg>
       </button>
-      <div className="collapse navbar-collapse" id="navbarCollapse">
+      <div className="collapse navbar-collapse" id="navbarCollapse" style={{backgroundColor: '#fff', width:'100%', /* padding: '20px 100px' */}}>
         <ul className="navbar-nav  w-90 justify-content-end clearfix" style={{marginRight: '4%', marginLeft:'35%'}}>
           <li className="nav-item">
             <a className="nav-link" href="#hero-area">
@@ -39,6 +40,7 @@ function Navbar() {
             </a>
           </li>
           <li className="nav-item">
+           
             <a className="nav-link" href="#about-section">
               Chi sono
             </a>
