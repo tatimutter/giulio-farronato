@@ -13,7 +13,7 @@ const AboutOneCol = (
     }
 ) => {
   return (
-    <div id="about-section" className="about-area section-padding" >
+    <div id="about-section" className="about-area section-padding" /* style={{height:"100vh"}} */>
         <div className="container" style={{textAlign:"center"}}>
           <div className="row">
             <div className="col-lg-12 col-md-12 col-xs-12 info">

@@ -41,7 +41,7 @@ const About = (
             </div>
             <div className="col-lg-6 col-md-12 col-xs-12 wow fadeInRight" data-wow-delay="0.3s">
               <img className="img-fluid" src="../LinkedIn-test.png" alt="" style={{marginTop:'60px', marginBottom:'50px'}}></img>
-              <a href="#" className="btn btn-custom mt-3">{linkedIn}</a>
+              <a href="https://www.linkedin.com/in/giuliofarronato/?originalSubdomain=it" className="btn btn-custom mt-3">{linkedIn}</a>
             </div>
           </div>
         </div>

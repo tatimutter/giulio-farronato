@@ -3,6 +3,7 @@ import React, {useState} from 'react';
 import Hero from '../Components/Hero';
 import About from '../Components/About';
 import Servizi from '../Components/Servizi';
+import Contatti from '../Components/Contatti';
 
 
 function Home(
@@ -40,17 +41,27 @@ function Home(
  descr4= 'Sono socio delle associazioni ASGI - Associazione Studi Giuridici Immigrazione e Rete Lenford-Avvocatura per i diritti LGBT+ attraverso cui ho conosciuto avvocati e avvocate con cui collaboro frequentemente e dal 2023 sono Osservatore per le condizioni di detenzione e membro del difensore civico per l&#39;associazione Antigone.'       
  descr5= 'Se vuoi approfondire le mie competenze puoi scrivermi o guardare il mio profilo LinkedIn.'
  mail='Scrivimi'
- linkedIn='Visita il mio LinkedIn' /> 
+ linkedIn='Visita il mio LinkedIn' />
+
 <Servizi 
 help='Come posso aiutarti'
 item1='Diritto di Famiglia'
-content1='Mi occupo di tutte le pratiche più comuni del diritto di famiglia: separazioni, divorzi, affidamento e mantenimento dei figli, eredità, riconoscimento del figlio, procedure di interdizione, inabilitazione e nomina di amministratori di sostegno. Ho una particolare esperienza in procedimenti relativi a minori, donne vittime di violenze e abusi e persone in situazioni di svantaggio sociale. 
-In molti casi, mi sono dovuto occupare di pratiche di diritto di famiglia con risvolti relativi al diritto privato internazionale, materia con cui ho maturato esperienza.'
+content1='Mi occupo di tutte le pratiche più comuni del diritto di famiglia: separazioni, divorzi, affidamento e mantenimento dei figli, eredità, riconoscimento del figlio, procedure di interdizione, inabilitazione e nomina di amministratori di sostegno.'
+content1a= 'Ho una particolare esperienza in procedimenti relativi a minori, donne vittime di violenze e abusi e persone in situazioni di svantaggio sociale.' 
+content1b= 'In molti casi, mi sono dovuto occupare di pratiche di diritto di famiglia con risvolti relativi al diritto privato internazionale, materia con cui ho maturato esperienza.'
 item2='Diritto dell&#39;Immigrazione'
-content2='Ho una lunga esperienza in questo ambito che ho iniziato a seguire fin dagli studi universitari. Mi occupo sia dell&#39;ambito giudiziale che stra giudiziale. Alcuni degli ambiti di cui mi occupo sono rilascio, conversione e rinnovo dei permessi di soggiorno per privati ma anche per aziende (come ad esempio nei casi di lavoratori altamente specializzati, distacchi di azienda o c.d. flussi). Seguo pratiche per il riconoscimento della cittadinanza e la tutela di persone richiedenti protezione internazionale. 
-Sono consulente in tematiche di diritto dell&#39;immigrazione per alcune aziende così come per alcuni enti del terzo settore.'
+content2='Ho una lunga esperienza in questo ambito che ho iniziato a seguire fin dagli studi universitari. Mi occupo sia dell&#39;ambito giudiziale che stra giudiziale.'
+content2a= 'Alcuni degli ambiti di cui mi occupo sono rilascio, conversione e rinnovo dei permessi di soggiorno per privati ma anche per aziende (come ad esempio nei casi di lavoratori altamente specializzati, distacchi di azienda o c.d. flussi).'
+content2b= 'Seguo pratiche per il riconoscimento della cittadinanza e la tutela di persone richiedenti protezione internazionale.' 
+content2c='Sono consulente in tematiche di diritto dell&#39;immigrazione per alcune aziende così come per alcuni enti del terzo settore.'
 item3='Minoranze e diritti LGBT+'
-content3='Mi sono occupato spesso di casi che includono minoranze e le relative discriminazioni che devono affrontare. In particolare, per quanto riguarda le persone trans mi occupo di cause di affermazione di genere e rettifica del nome. '/>
+content3='Mi sono occupato spesso di casi che includono minoranze e le relative discriminazioni che devono affrontare.'
+content3a='In particolare, per quanto riguarda le persone trans mi occupo di cause di affermazione di genere e rettifica del nome. '/>
+
+<Contatti 
+
+formIntro='Spiegazione su riempimento formulario Spiegazione su riempimento formulario '
+send='Invia messaggio'/> 
   
  
   

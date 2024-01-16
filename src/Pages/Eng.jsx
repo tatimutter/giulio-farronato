@@ -1,7 +1,7 @@
 import Hero from '../Components/Hero'
 import AboutOneCol from '../Components/AboutOneCol'
 import Servizi from '../Components/Servizi'
-
+import Contatti from '../Components/Contatti'
 
 function Eng() {
      
@@ -36,7 +36,9 @@ function Eng() {
         Sono consulente in tematiche di diritto dell&#39;immigrazione per alcune aziende così come per alcuni enti del terzo settore.'
         item3='Minoranze e diritti LGBT+'
         content3='Mi sono occupato spesso di casi che includono minoranze e le relative discriminazioni che devono affrontare. In particolare, per quanto riguarda le persone trans mi occupo di cause di affermazione di genere e rettifica del nome. '/>
-          
+      <Contatti 
+      formIntro='Spiegazione su riempimento formulario Spiegazione su riempimento formulario '
+      send='Invia messaggio'/>    
          
           
               {/*  Top Arrow  */}
