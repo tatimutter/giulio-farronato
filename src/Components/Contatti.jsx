@@ -38,14 +38,15 @@ const navigate = useNavigate();
     <div> <section id="contact-section" className="section-padding contact-area" /* style={{height:'100vh'}} */>    
     <div   className="container">
       <div className="section-header text-center">          
-        <h2 className="section-title wow fadeInDown" data-wow-delay="0.3s">Contattami</h2>
+        <h2 className="section-title wow fadeInDown" data-wow-delay="0.3s">Contatti</h2>
         <div className="shape wow fadeInDown" data-wow-delay="0.3s"></div>
+        <div className='text-center' style={{ paddingBottom:'20px', fontSize:'larger'}}> {formIntro}  </div>
       </div>
       <div className="row contact-form-area wow fadeInUp" data-wow-delay="0.3s">  
-
+      
       
         {/* Sezione contatti */}
-        <div className="col-lg-5 col-md-12 col-xs-12" style={{textAlign:'left'}}>
+        <div className="col-lg-5 col-md-12 col-xs-12" >
        
        {/* Contatti */}
         <div className="card shadow border-0 rounded-4 mb-5">
@@ -112,24 +113,25 @@ const navigate = useNavigate();
                 </li>
               </ul>
             </div>
-            </div>
+            
             {/* Sezione contatti end*/}
 
             {/* Mappa */}
-          <div className="map" style={{paddingTop:'20px'}}>
+          <div className="map" style={{textAlign:'center', margin:'0 -1em 0 -1em'}} >
             {/* <object style={{border:'0', height: '280px', width: '100%'}}data="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d34015.943594576835!2d-106.43242624069771!3d31.677719472407432!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86e75d90e99d597b%3A0x6cd3eb9a9fcd23f1!2sCourtyard+by+Marriott+Ciudad+Juarez!5e0!3m2!1sen!2sbd!4v1533791187584"></object> */}
-            <iframe title='indirizzo in Google Maps' src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d698.5683967163674!2d11.539421906843105!3d45.544821664851064!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x477f316332c9bc8d%3A0x5c833604f287c2f8!2sViale%20Roma%2C%2022%2C%2036100%20Vicenza%20VI%2C%20Italy!5e0!3m2!1sen!2sus!4v1695225466006!5m2!1sen!2sus"  style={{border:'0', width:'100%', height:'40vh'}} allowFullScreen loading="lazy"></iframe>
-          
+            <iframe title='indirizzo in Google Maps' src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d698.5683967163674!2d11.539421906843105!3d45.544821664851064!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x477f316332c9bc8d%3A0x5c833604f287c2f8!2sViale%20Roma%2C%2022%2C%2036100%20Vicenza%20VI%2C%20Italy!5e0!3m2!1sen!2sus!4v1695225466006!5m2!1sen!2sus"  style={{border:'0', width:'80%', height:'40vh', padding: '2em 0 2em 0', }} allowFullScreen loading="lazy"></iframe>
+          </div>
           {/* Mappa end */}
-        </div>
+          </div> 
         </div>
 
         {/* Form */} 
-        <div className="col-lg-7 col-md-12 col-sm-12">
-
+        <div className="col-lg-7 col-md-12 col-sm-12" >
+        <div className="card shadow border-0 rounded-4 mb-5">
+				<div className="card-body" style={{padding:'1rem'}}>
           <div  className="contact-block">
-          <div /* style={{marginBottom:'20px'}} */> <i>{formIntro} </i> </div>
-            <Form id="contactForm" ref={form} onSubmit={sendEmail}>
+         
+            <Form id="contactForm" ref={form} onSubmit={sendEmail} style={{paddingTop:'20px'}}>
               <div className="row">
                 <div className="col-md-6">
               <div className="form-group">
@@ -151,10 +153,10 @@ const navigate = useNavigate();
                 </div>
                 <div className="col-md-12">
                   <div className="form-group"> 
-                    <textarea className="form-control" id="message" placeholder="Messaggio" rows="7" data-error="Scrivi il tuo messaggio" required></textarea>
+                    <textarea className="form-control" id="message" placeholder="Messaggio" rows="8" data-error="Scrivi il tuo messaggio" required></textarea>
                     <div className="help-block with-errors"></div>
                   </div>
-                  <div className="submit-button text-left">
+                  <div className="submit-button text-center" style={{paddingTop:'1em', paddingBottom:'1em'}}>
                     <button className="btn btn-custom" id="form-submit" type="submit" values="Send">{send}</button>
 
                     {data && data.error && <p>{data.error}</p>}
@@ -166,6 +168,8 @@ const navigate = useNavigate();
             </Form>
           </div>
         </div>
+      </div>
+      </div>
       </div>
     </div> 
     

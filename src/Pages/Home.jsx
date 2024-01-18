@@ -60,7 +60,7 @@ content3a='In particolare, per quanto riguarda le persone trans mi occupo di cau
 
 <Contatti 
 
-formIntro='Spiegazione su riempimento formulario Spiegazione su riempimento formulario '
+formIntro='Vienimi a trovare oppure riempi il formulario con i tuoi dati e la tua richiesta. Ti risponderò il prima possibile.'
 send='Invia messaggio'/> 
   
  

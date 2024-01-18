@@ -24,8 +24,8 @@ function Eng() {
          descr2='I temi di cui mi occupo principalmente riguardano il diritto di famiglia, dell&#39;immigrazione e della tutela delle persone LGBT+.'
          descr3= 'Ho maturato esperienza presso le giurisdizioni ordinarie, le sezioni specializzate e le giurisdizioni amministrative. In passato sono stato assegnista di ricerca presso l&#39;università di Padova in materia di diritto internazionale.'
          descr4= 'Sono socio delle associazioni ASGI - Associazione Studi Giuridici Immigrazione e Rete Lenford-Avvocatura per i diritti LGBT+ attraverso cui ho conosciuto avvocati e avvocate con cui collaboro frequentemente e dal 2023 sono Osservatore per le condizioni di detenzione e membro del difensore civico per l&#39;associazione Antigone.'       
-         descr5= 'Se vuoi approfondire le mie competenze puoi scrivermi o guardare il mio profilo LinkedIn.'
-         mail='Scrivimi'
+        descr5= 'Vuoi saperne di più?'
+         /*  mail='Scrivimi' */
          linkedIn='Visita il mio LinkedIn' /> 
         <Servizi 
         help='Come posso aiutarti'
