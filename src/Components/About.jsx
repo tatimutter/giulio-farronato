@@ -1,6 +1,6 @@
-import React from 'react'
+import React, {useState} from "react";
 
-const About = (
+function About (
     {
         who,
         descr1,
@@ -11,7 +11,19 @@ const About = (
         mail,
         linkedIn
     }
-) => {
+)  {
+
+  const [show, setShow] = useState(Array(7).fill(false));
+
+	
+
+	function toggle(index) {
+		const updatedShow = [...show];
+		updatedShow[index] = !updatedShow[index];
+		setShow(updatedShow);
+		
+	  }
+    
   return (
     <div id="about-section" className="about-area section-padding" >
         <div className="container">
@@ -24,6 +36,8 @@ const About = (
                     <h2 className="section-title">{who}</h2>
                   </div>
                   <div className="content">
+
+                    
                     <p style={{fontSize:"larger"}}> {descr1} 
                     </p>
                     {descr2} 
