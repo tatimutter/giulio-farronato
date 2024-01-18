@@ -5,14 +5,14 @@ function Footer() {
 	return (
 
 
-<footer id="footer" className="footer-area section-padding" >
+<footer id="footer" className="footer-area" >
 <div className="container footerTop">
-          <div className="row " style={{paddingTop:'10px'}}>
+          <div className="row " style={{paddingTop:'5px',  }}>
            
              
-                  <div className="footer-logo col-2"><img style={{width:'105px'}} src="../logo.svg" alt=""></img></div>
-                  <div className="textwidget col-10" style={{paddingLeft:'10px', verticalAlign:'middle'}}>
-                    <br />
+                  <div className="footer-logo col-2"><img style={{width:'65px', display: 'flex', verticalAlign:'middle' }} src="../logo.svg" alt=""></img></div>
+                  <div className="textwidget col-10" style={{paddingLeft:'10px', }}>
+                   
                 	<i>Informazioni legali e fiscali  Informazioni legali e fiscali  Informazioni legali e fiscali  </i>
                   </div>
                
