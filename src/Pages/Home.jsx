@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 
 import Hero from '../Components/Hero';
-import About from '../Components/About';
+import AboutOneCol from '../Components/AboutOneCol';
 import Servizi from '../Components/Servizi';
 import Contatti from '../Components/Contatti';
 
@@ -33,15 +33,18 @@ function Home(
    altPic='Piano americano dell&#39;avvocato Giulio Farronato, sorridente. Indossa una camicia bianca' />
 
 
- <About 
+ <AboutOneCol
+ 
+
  who='Chi sono'
  descr1='Sono avvocato presso il foro di Vicenza ed esperto in diritti umani e protezione internazionale presso la Prefettura di Treviso.'
  descr2='I temi di cui mi occupo principalmente riguardano il diritto di famiglia, dell&#39;immigrazione e della tutela delle persone LGBT+.'
  descr3= 'Ho maturato esperienza presso le giurisdizioni ordinarie, le sezioni specializzate e le giurisdizioni amministrative. In passato sono stato assegnista di ricerca presso l&#39;università di Padova in materia di diritto internazionale.'
  descr4= 'Sono socio delle associazioni ASGI - Associazione Studi Giuridici Immigrazione e Rete Lenford-Avvocatura per i diritti LGBT+ attraverso cui ho conosciuto avvocati e avvocate con cui collaboro frequentemente e dal 2023 sono Osservatore per le condizioni di detenzione e membro del difensore civico per l&#39;associazione Antigone.'       
- descr5= 'Se vuoi approfondire le mie competenze puoi scrivermi o guardare il mio profilo LinkedIn.'
- mail='Scrivimi'
- linkedIn='Visita il mio LinkedIn' />
+descr5= 'Vuoi saperne di più?'
+ /*  mail='Scrivimi' */
+ linkedIn='Visita il mio LinkedIn' 
+ />
 
 <Servizi 
 help='Come posso aiutarti'
