@@ -15,7 +15,15 @@ function Hero({
   
 {/* Hero Start */}
   <div id="hero-area" className="hero-area"  style={{paddingTop:'7em'}}>
-  <div className="container">      
+  <div className="container" style={{position:'relative'}}>  
+
+
+  {/* Under Construction */}
+  <div className='underConstruction' style={{zIndex:'50000'}}>
+    <h3 style={{zIndex:'50000', display:'block', background:'lightBlue', color:'red', textAlign:'center'}}> Sito in costruzione</h3>
+    </div>  
+
+
     <div className="row align-items-center">
       <div className="col-lg-7 col-md-12 col-sm-12 col-xs-12">
         <div className="contents">

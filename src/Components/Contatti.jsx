@@ -83,7 +83,7 @@ const navigate = useNavigate();
 
                 {/* Mail */}
                 <li>
-                <a href="mailto:giulio@mail.com">
+                <a href="mailto:info@giuliofarronato.com">
                 <svg
                 viewBox="0 -3 24 24"
                 fill="currentColor"
@@ -92,7 +92,7 @@ const navigate = useNavigate();
                 >
                 <path d="M20 8l-8 5-8-5V6l8 5 8-5m0-2H4c-1.11 0-2 .89-2 2v12a2 2 0 002 2h16a2 2 0 002-2V6a2 2 0 00-2-2z" />
                 </svg>
-					<span className="visually-hidden" style={{paddingLeft:'10px'}}>Scrivimi</span>
+					<span className="visually-hidden" style={{paddingLeft:'10px'}}>info@giuliofarronato.com</span>
 					</a>
                 </li>
                 <br/>

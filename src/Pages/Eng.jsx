@@ -7,10 +7,14 @@ import Contatti from '../Components/Contatti'
 function Eng() {
      
         return (
-          <body>
+          <body >
+            
+<Hero 
+h2='English version available soon!'
+/>
 
 
-    
+    {/* 
           <Hero 
            h2=' Avvocato Giulio Farronato'
            h3='Diritto di famiglia e dell&#39;immigrazione' 
@@ -42,7 +46,7 @@ function Eng() {
       <Contatti 
       formIntro='Spiegazione su riempimento formulario Spiegazione su riempimento formulario '
       send='Invia messaggio'/>    
-         
+          */}
           
               {/*  Top Arrow  */}
               {/* <a href="#" className="back-to-top">

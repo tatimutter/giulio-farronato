@@ -4,6 +4,7 @@ import Hero from '../Components/Hero';
 import AboutOneCol from '../Components/AboutOneCol';
 import Servizi from '../Components/Servizi';
 import Contatti from '../Components/Contatti';
+import UnderConstruction from '../Components/UnderConstruction'
 
 
 function Home(
@@ -24,7 +25,7 @@ function Home(
     return (
       <body>
 
-
+  
     
   <Hero 
    h2=' Avvocato Giulio Farronato'
