@@ -1,5 +1,4 @@
 import React, {useState} from "react";
-
 function About (
     {
         who,
@@ -36,8 +35,6 @@ function About (
                     <h2 className="section-title">{who}</h2>
                   </div>
                   <div className="content">
-
-                    
                     <p style={{fontSize:"larger"}}> {descr1} 
                     </p>
                     {descr2} 
@@ -48,7 +45,7 @@ function About (
                     <br/><br/>
                     <p style={{fontWeight:"bold", fontSize:"medium"}}>{descr5}</p> 
                     
-                    <a href="#" className="btn btn-custom mt-3">{mail}</a>
+                    <a href="mailto:info@nicolanoro.com" className="btn btn-custom mt-3">{mail}</a>
                   </div>
                 </div>
               </div>

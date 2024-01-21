@@ -13,7 +13,7 @@ function Footer() {
                   <div className="footer-logo col-2"><img style={{width:'65px', display: 'flex', verticalAlign:'middle' }} src="../logo.svg" alt=""></img></div>
                   <div className="textwidget col-10" style={{paddingLeft:'10px', }}>
                    
-                	{/* <i>Informazioni legali e fiscali  Informazioni legali e fiscali  Informazioni legali e fiscali  </i> */}
+                	<i>P.IVA: 04438560247 PEC: giulio.farronato@ordineavvocativicenza.it   </i>
                   </div>
                
             

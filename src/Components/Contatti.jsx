@@ -50,7 +50,8 @@ const navigate = useNavigate();
        
        {/* Contatti */}
         <div className="card shadow border-0 rounded-4 mb-5">
-				<div className="card-body" style={{padding:'1rem'}}>
+				<div className="card-body" style={{padding:'1em 2em 2.3em 2em'}}>
+                  
             <ul>
             
             {/* Indirizzo */}   
@@ -64,7 +65,7 @@ const navigate = useNavigate();
                 >
                 <path d="M12 3L2 12h3v8h14v-8h3L12 3m0 4.7c2.1 0 3.8 1.7 3.8 3.8 0 3-3.8 6.5-3.8 6.5s-3.8-3.5-3.8-6.5c0-2.1 1.7-3.8 3.8-3.8m0 2.3a1.5 1.5 0 00-1.5 1.5A1.5 1.5 0 0012 13a1.5 1.5 0 001.5-1.5A1.5 1.5 0 0012 10z" />
                 </svg>
-                  <span className="visually-hidden" style={{paddingLeft:'10px'}}>via Roma, 22 Vicenza</span>
+                  <span className="visually-hidden" style={{paddingLeft:'10px'}}>Via Ognissanti 65, 36061, Bassano del Grappa</span>
                  </li>
                  <br />
                 {/* Telefono */}
@@ -77,7 +78,7 @@ const navigate = useNavigate();
                 >
                 <path d="M12 3C7.46 3 3.34 4.78.29 7.67c-.18.18-.29.43-.29.71 0 .28.11.53.29.71l2.48 2.48a1.01 1.01 0 001.41.01c.79-.74 1.69-1.36 2.66-1.85.33-.16.56-.5.56-.9v-3.1C8.85 5.25 10.39 5 12 5c1.59 0 3.14.25 4.59.72v3.1c0 .39.23.74.56.9.98.49 1.85 1.12 2.67 1.85.18.18.43.28.68.28.3 0 .55-.11.73-.29l2.48-2.48c.18-.18.29-.43.29-.71 0-.28-.12-.52-.3-.7A16.965 16.965 0 0012 3M9 7v3s-6 5-6 8v4h18v-4c0-3-6-8-6-8V7h-2v2h-2V7H9m3 5a4 4 0 014 4 4 4 0 01-4 4 4 4 0 01-4-4 4 4 0 014-4m0 1.5A2.5 2.5 0 009.5 16a2.5 2.5 0 002.5 2.5 2.5 2.5 0 002.5-2.5 2.5 2.5 0 00-2.5-2.5z" />
                 </svg>
-                <span style={{paddingLeft:'10px'}}>+39 1234 567 890</span>
+                <span style={{paddingLeft:'10px'}}>+39 338 696 4793</span>
                 </li>
                 <br />
 
@@ -119,7 +120,8 @@ const navigate = useNavigate();
             {/* Mappa */}
           <div className="map" style={{textAlign:'center', margin:'0 -1em 0 -1em'}} >
             {/* <object style={{border:'0', height: '280px', width: '100%'}}data="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d34015.943594576835!2d-106.43242624069771!3d31.677719472407432!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86e75d90e99d597b%3A0x6cd3eb9a9fcd23f1!2sCourtyard+by+Marriott+Ciudad+Juarez!5e0!3m2!1sen!2sbd!4v1533791187584"></object> */}
-            <iframe title='indirizzo in Google Maps' src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d698.5683967163674!2d11.539421906843105!3d45.544821664851064!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x477f316332c9bc8d%3A0x5c833604f287c2f8!2sViale%20Roma%2C%2022%2C%2036100%20Vicenza%20VI%2C%20Italy!5e0!3m2!1sen!2sus!4v1695225466006!5m2!1sen!2sus"  style={{border:'0', width:'80%', height:'40vh', padding: '2em 0 2em 0', }} allowFullScreen loading="lazy"></iframe>
+           
+            <iframe title='indirizzo in Google Maps' src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2783.6933622097254!2d11.730513275249526!3d45.75729301383678!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4778d1e239d01645%3A0x3297ca0dda79d4d2!2sVia%20Ognissanti%2C%2065%2C%2036061%20Bassano%20del%20Grappa%20VI!5e0!3m2!1sit!2sit!4v1705835711370!5m2!1sit!2sit"style={{border:'0', width:'80%', height:'40vh', padding: '2em 0 2em 0'}} allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
           </div>
           {/* Mappa end */}
           </div> 
@@ -128,12 +130,14 @@ const navigate = useNavigate();
         {/* Form */} 
         <div className="col-lg-7 col-md-12 col-sm-12" >
         <div className="card shadow border-0 rounded-4 mb-5">
-				<div className="card-body" style={{padding:'1rem'}}>
+				<div className="card-body" style={{paddingTop:'2em'}}>
+                    
           <div  className="contact-block">
-         
+          <div style={{textAlign:'center'}}>Vuoi avere più informazioni o hai alcune domande? Puoi compilare questo form, ti contatterò appena possibile</div>
             <Form id="contactForm" ref={form} onSubmit={sendEmail} style={{paddingTop:'20px'}}>
               <div className="row">
                 <div className="col-md-6">
+                    
               <div className="form-group">
               <input type="text" className="form-control" id="name" name="name" placeholder="Nome" required data-error="Inserisci nome" />
                 <div className="help-block with-errors"></div>
@@ -156,7 +160,7 @@ const navigate = useNavigate();
                     <textarea className="form-control" id="message" placeholder="Messaggio" rows="8" data-error="Scrivi il tuo messaggio" required></textarea>
                     <div className="help-block with-errors"></div>
                   </div>
-                  <div className="submit-button text-center" style={{paddingTop:'1em', paddingBottom:'1em'}}>
+                  <div className="submit-button text-center" style={{paddingTop:'0.5em', paddingBottom:'0.5em'}}>
                     <button className="btn btn-custom" id="form-submit" type="submit" values="Send">{send}</button>
 
                     {data && data.error && <p>{data.error}</p>}

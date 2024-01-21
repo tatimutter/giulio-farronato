@@ -26,30 +26,31 @@ const AboutOneCol = (
                     
                     <h2 className="section-title">{who}</h2>
                   </div>
-                  <div className="content" style={{textAlign:'center'}}>
-                    <p style={{fontSize:"larger"}}> {descr1} 
+                  <div className="content" style={{textAlign:'center', padding:'0 7em'}}>
+                    <p style={{fontSize:"1.1em"}}> {descr1}
+                    <br /> 
                     {/* Pallino */}
-                    <div className="services-item wow fadeInRight" data-wow-delay="0.3s" style={{padding:'0'}}>
+                    {/* <div className="services-item wow fadeInRight" data-wow-delay="0.3s" style={{padding:'0'}}>
                     <div className="icon" style={{height:'1em', width:'1em'}}>
                     <i className="lni-cog" ></i>
                     </div>
-                    </div>
+                    </div> */}
                     {descr2} 
-                    <br/>
+                    <br/> <br/>
                     {/* Pallino */}
-                    <div className="services-item wow fadeInRight" data-wow-delay="0.3s" style={{padding:'0'}}>
+                    {/* <div className="services-item wow fadeInRight" data-wow-delay="0.3s" style={{padding:'0'}}>
                     <div className="icon" style={{height:'1em', width:'1em'}}>
                     <i className="lni-cog" ></i>
                     </div>
-                    </div>
+                    </div> */}
                     {descr3} 
-                    <br/> 
+                    <br/>  <br/>
                     {/* Pallino */}
-                    <div className="services-item wow fadeInRight" data-wow-delay="0.3s" style={{padding:'0'}}>
+                    {/* <div className="services-item wow fadeInRight" data-wow-delay="0.3s" style={{padding:'0'}}>
                     <div className="icon" style={{height:'1em', width:'1em'}}>
                     <i className="lni-cog" ></i>
                     </div>
-                    </div>
+                    </div> */}
                     {descr4} 
                     <br/> <br/>
                     {/* <span style={{fontWeight:"bold"}}>{descr5}</span>  */}

@@ -64,7 +64,7 @@ content3a='In particolare, per quanto riguarda le persone trans mi occupo di cau
 
 <Contatti 
 
-formIntro='Vienimi a trovare oppure riempi il formulario con i tuoi dati e la tua richiesta. Ti risponderò il prima possibile.'
+/* formIntro='Vuoi avere più informazioni o hai alcune domande? Puoi compilare questo form, ti contatterò appena possibile' */
 send='Invia messaggio'/> 
   
  
