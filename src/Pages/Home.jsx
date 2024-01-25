@@ -4,7 +4,7 @@ import Hero from '../Components/Hero';
 import AboutOneCol from '../Components/AboutOneCol';
 import Servizi from '../Components/Servizi';
 import Contatti from '../Components/Contatti';
-import UnderConstruction from '../Components/UnderConstruction'
+
 
 
 function Home(

@@ -9,6 +9,7 @@ import './App.css'
 
 import It from './Pages/Home';
 import Eng from './Pages/Eng'
+import ReqSuccess from './Components/ReqSuccess';
 import ErrorBoundary from './Components/ErrorBoundary';
 
 //layout
@@ -30,32 +31,12 @@ const router = createBrowserRouter(
 				element={<Eng />}			
 				errorElement={<ErrorBoundary />}
 	/>
-			{/*
-			<Route
-				path="/servizi"
-				element={<Servizi />}
-				errorElement={<ErrorBoundary />}
-			/>
-			<Route
-				path="/richieste"
-				element={<Richieste />}
-				errorElement={<ErrorBoundary />}
-			/>
-			<Route
-				path="/inscrsuccess"
-				element={<InscrSuccess />}
-				errorElement={<ErrorBoundary />}
-			/>
-			<Route
-				path="/informazioni"
-				element={<Informazioni />}
-				errorElement={<ErrorBoundary />}
-			/>
+			{
 			<Route
 				path="/reqsuccess"
 				element={<ReqSuccess />}
 				errorElement={<ErrorBoundary />}
-			/> */}
+			/> }
 		</Route>
 	</>	
 	)

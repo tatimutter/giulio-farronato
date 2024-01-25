@@ -1,11 +1,11 @@
 import React, { useRef, useState, useEffect } from 'react';
-import { Form, redirect, useActionData, useNavigate} from 'react-router-dom';
+import { Form, useActionData} from 'react-router-dom';
 import emailjs from '@emailjs/browser';
 
 function Contatti (
     {
     formIntro,
-    send
+    send,
     }
 ) 
 
@@ -15,24 +15,93 @@ function Contatti (
 
 	const form = useRef();
 	
-const navigate = useNavigate();
+    const [successMessage, setSuccessMessage] = useState(null);
+    const [formErrors, setFormErrors] = useState({});
+
+    const [formData, setFormData] = useState({
+        name: '',
+        email: '',
+        msg_subject: '',
+        message: '',
+      })
+
+    useEffect(() => {
+        const handleClickOutside = (event) => {
+          // Close the success message if a click occurs outside the message
+          if (successMessage && !event.target.closest('.success-message')) {
+            setSuccessMessage(null);
+          }
+        };
+    
+        document.addEventListener('click', handleClickOutside);
+        
+        return () => {
+            document.removeEventListener('click', handleClickOutside);
+          };
+        }, [successMessage]);
 
 
-  const sendEmail = (e) => {
-    e.preventDefault();
+        
 
-    emailjs.sendForm('giuliofarronato', 'xxx', form.current, 'xxx')
+        const handleChange = (e) => {
+            const { name, value } = e.target;
+            setFormData({ ...formData, [name]: value });
+            setFormErrors({ ...formErrors, [name]: '' });
+          };
+
+  
+          const validateForm = () => {
+            const errors = {};
+        
+            if (!formData.name) {
+              errors.name = 'Inserisci nome';
+            }
+            if (!formData.email) {
+              errors.email = 'Inserisci il tuo indirizzo email';
+            }
+
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (formData.email && !emailRegex.test(formData.email)) {
+        errors.email = 'Formato email non valido';
+    }
+    
+            if (!formData.msg_subject) {
+                errors.msg_subject = 'Inserisci un soggetto per il tuo messsaggio';
+              }
+            
+              if (!formData.message) {
+                errors.message = 'Scrivi il tuo messsaggio';
+              }
+        
+            setFormErrors(errors);
+        
+            return Object.keys(errors).length === 0;
+          };
+        
+
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        // Validate the form before submitting
+        if (validateForm()) {
+          // Your form submission logic goes here
+    
+
+    emailjs.sendForm('giuliofarronato', 'form', form.current, 'XYIejysAdK_2Ot8Ki')
       .then((result) => {
           console.log(result.text);
+          setSuccessMessage('Il tuo messaggio è stato inviato!');
+          
       }, (error) => {
           console.log(error.text);
+          setSuccessMessage('Il messaggio non è stato inviato. Riprova.');
+          
       });
 
 	  e.target.reset()
 
-	  
-	  navigate('/reqsuccess');
-    };
+	}
+};  
+   
 
   return (
     <div> <section id="contact-section" className="section-padding contact-area" /* style={{height:'100vh'}} */>    
@@ -134,42 +203,81 @@ const navigate = useNavigate();
                     
           <div  className="contact-block">
           <div style={{textAlign:'center'}}>Vuoi avere più informazioni o hai alcune domande? Puoi compilare questo form, ti contatterò appena possibile</div>
-            <Form id="contactForm" ref={form} onSubmit={sendEmail} style={{paddingTop:'20px'}}>
+        <Form id="contactForm" ref={form} onSubmit={handleSubmit} style={{paddingTop:'20px'}}>
               <div className="row">
                 <div className="col-md-6">
                     
               <div className="form-group">
-              <input type="text" className="form-control" id="name" name="name" placeholder="Nome" required data-error="Inserisci nome" />
-                <div className="help-block with-errors"></div>
-                  </div>                                 
+              <div className="form-group">
+
+    {/* Nome */}
+        <input
+        type="text"
+        className={`form-control ${formErrors.name ? 'is-invalid' : ''}`}    
+        id="name"
+        name="name"
+        placeholder="Nome"
+        onChange={handleChange}
+        value={formData.name}
+  />
+    {formErrors.name && <div className="invalid-feedback">{formErrors.name}</div>}
+</div>
+
+               </div>                                 
                 </div>
                 <div className="col-md-6">
                   <div className="form-group">
-                    <input type="text" placeholder="Email" id="email" className="form-control" name="email" required data-error="Inserisci email" />
-                    <div className="help-block with-errors"></div>
-                  </div> 
+    {/* Email */}
+
+        <input type="text" placeholder="Indirizzo email" id="email" className={`form-control ${formErrors.email ? 'is-invalid' : ''}`} name="email" onChange={handleChange}
+    value={formData.email}
+  />
+    {formErrors.email && <div className="invalid-feedback">{formErrors.email}</div>}       </div> 
                 </div>
                  <div className="col-md-12">
                   <div className="form-group">
-                    <input type="text" placeholder="Oggetto" id="msg_subject" className="form-control" required data-error="Inserisci oggetto del messaggio" />
-                    <div className="help-block with-errors"></div>
+
+    {/* Oggetto */}
+        <input 
+        type="text" 
+        placeholder="Oggetto" 
+        name='msg_subject' 
+        id="msg_subject" 
+        className={`form-control ${formErrors.msg_subject ? 'is-invalid' : ''}`}  
+        onChange={handleChange}
+        value={formData.msg_subject}
+        />
+          {formErrors.msg_subject && <div className="invalid-feedback">{formErrors.msg_subject}</div>}          
                   </div>
                 </div>
                 <div className="col-md-12">
                   <div className="form-group"> 
-                    <textarea className="form-control" id="message" placeholder="Messaggio" rows="8" data-error="Scrivi il tuo messaggio" required></textarea>
-                    <div className="help-block with-errors"></div>
+
+    {/* Messaggio */}
+        <textarea 
+        className={`form-control ${formErrors.message ? 'is-invalid' : ''}`} 
+        id="message" 
+        name='message' 
+        placeholder="Messaggio" 
+        rows="8"  
+        onChange={handleChange}
+        value={formData.message}
+        />
+        {formErrors.message && <div className="invalid-feedback">{formErrors.message}</div>}
                   </div>
                   <div className="submit-button text-center" style={{paddingTop:'0.5em', paddingBottom:'0.5em'}}>
                     <button className="btn btn-custom" id="form-submit" type="submit" values="Send">{send}</button>
 
                     {data && data.error && <p>{data.error}</p>}
+                    
                     <div id="msgSubmit" className="h3 text-center hidden"></div> 
                     <div className="clearfix"></div> 
                   </div>
                 </div>
               </div>            
             </Form>
+            {successMessage && <div style={{background:'#F3FAF5', marginTop:'1em', padding:'1em 0', textAlign:'center',  verticalAlign:'middle'}}>{successMessage}</div>}
+            
           </div>
         </div>
       </div>
@@ -179,6 +287,6 @@ const navigate = useNavigate();
     
   </section></div>
   );
-}
+};
 
 export default Contatti
