@@ -7,21 +7,21 @@ function Footer() {
 
 <footer id="footer" className="footer-area" >
 <div className="container footerTop" style={{ display: 'flex'  }} >
-          <div className="row " style={{paddingTop:'10px'}}>
+          <div className="row" style={{paddingTop:'1em'}}>
            
              
-                  <div className="col-lg-2 col-md-2 col-sm-2"><img style={{width:'50px', }} src="../logo.svg" alt=""></img></div>
+                  <div className="col-lg-2 col-md-2 col-sm-1"><img style={{width:'50px', }} src="../logo.svg" alt=""></img></div>
                   
-                  <div className="col-lg-10 col-md-10 col-sm-10" style={{ fontSize:'0.9em', textAlign:'center', paddingTop:'0.3em', /* marginLeft:'-6em' */}}>
+                  <div id='footer-iva' className="col-lg-10 col-md-10 col-sm-11">
                    
-                	<i>P.IVA 04438560247 -
+                	<i>P.IVA 04438560247 <br />
                     PEC giulio.farronato@ordineavvocativicenza.it </i>
                   </div>
                
             
           </div>  
         </div> 
-        <div id="copyright">
+        <div className='footerBottom' id="copyright">
          
                  <div className="copyright-content">
                   <p>Creato da Tatiana Motterle - 2024</p>

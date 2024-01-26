@@ -26,7 +26,7 @@ const AboutOneCol = (
                     
                     <h2 className="section-title">{who}</h2>
                   </div>
-                  <div className="content" style={{textAlign:'center', padding:'0 7em'}}>
+                  <div className="about-content" /* style={{textAlign:'center', padding:'0 7em'}} */>
                     <p style={{fontSize:"1.1em"}}> {descr1}
                     <br /> 
                     {/* Pallino */}
