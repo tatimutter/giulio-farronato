@@ -104,7 +104,7 @@ function Contatti (
    
 
   return (
-    <div> <section id="contact-section" className="section-padding contact-area" /* style={{height:'100vh'}} */>    
+    <div> <section id="contact-section" className="section-padding contact-area">    
     <div   className="container">
       <div className="section-header text-center">          
         <h2 className="section-title wow fadeInDown" data-wow-delay="0.3s">Contatti</h2>
@@ -202,7 +202,7 @@ function Contatti (
 				<div className="card-body" style={{paddingTop:'2em'}}>
                     
           <div  className="contact-block">
-          <div style={{textAlign:'center'}}>Vuoi avere più informazioni o hai alcune domande? Puoi compilare questo form, ti contatterò appena possibile</div>
+          <div style={{textAlign:'center'}}>Vuoi avere più informazioni o hai alcune domande? Puoi compilare questo form, ti contatterò appena possibile.</div>
         <Form id="contactForm" ref={form} onSubmit={handleSubmit} style={{paddingTop:'20px'}}>
               <div className="row">
                 <div className="col-md-6">

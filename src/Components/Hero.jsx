@@ -19,9 +19,9 @@ function Hero({
 
 
   {/* Under Construction */}
-  <div className='underConstruction' style={{zIndex:'50000'}}>
+  {/* <div className='underConstruction' style={{zIndex:'50000'}}>
     <h3 style={{zIndex:'50000', display:'block', background:'lightBlue', color:'red', textAlign:'center'}}> Sito in costruzione</h3>
-    </div>  
+    </div>  */} 
 
 
     <div className="row align-items-center">
