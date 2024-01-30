@@ -58,12 +58,12 @@ const AboutOneCol = (
                     </div>
                     
                   <div className="row" >
-                  <div className="col-lg-6 col-md-6 col-xs-6" style={{textAlign:'right', display:'inline'}}>
+                  <div className="about-info col-lg-6 col-md-6 col-s-6 col-xs-12">
                   <p style={{fontWeight:"bold", fontSize:"larger"}}>{descr5}</p> 
                    {/*  <a href="#" className="btn btn-custom mt-3">{mail}</a> */}
                    {/* <img className="img-fluid" src="../LinkedIn-test.png" alt="" style={{width:'50vh'}}></img> */}
                   </div>
-                  <div className="col-lg-6 col-md-6 col-xs-6" style={{textAlign:'left', }}>
+                  <div className="about-linkedin col-lg-6 col-md-6 col-s-6 col-xs-12" >
                     <a href="https://www.linkedin.com/in/giuliofarronato/?originalSubdomain=it" className="btn btn-custom mt-3" style={{}}>{linkedIn}</a>
                   </div> 
                   </div>
