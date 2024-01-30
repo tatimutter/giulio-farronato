@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
 
 import Hero from '../Components/Hero';
 import AboutOneCol from '../Components/AboutOneCol';
@@ -22,6 +22,36 @@ function Home(
 		setShow(updatedShow);
 		
 	  }
+
+    const offset = 200;
+    const duration = 500;
+    const [showButton, setShowButton] = useState(false);
+  
+    useEffect(() => {
+      const handleScroll = () => {
+        if (window.scrollY > offset) {
+          setShowButton(true);
+        } else {
+          setShowButton(false);
+        }
+      };
+  
+      window.addEventListener('scroll', handleScroll);
+  
+      return () => {
+        window.removeEventListener('scroll', handleScroll);
+      };
+    }, []); 
+  
+    const scrollToTop = () => {
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth',
+      }); 
+
+    };
+
+    
     return (
       <body>
 
@@ -64,10 +94,26 @@ content3a='In particolare, per quanto riguarda le persone trans mi occupo di cau
 
 <Contatti 
 
-/* formIntro='Vuoi avere più informazioni o hai alcune domande? Puoi compilare questo form, ti contatterò appena possibile' */
+
 send='Invia messaggio'/> 
   
- 
+  <div style={{textAlign:'right', paddingRight:'1em'}}>
+      {showButton && (
+        <button style={{background: 'transparent',
+          border: 'none' }} onClick={scrollToTop}>
+         <svg
+      fill="#46bbc6"
+      viewBox="0 0 16 16"
+      height="3em"
+      width="3em"
+      
+    >
+      <path d="M16 8A8 8 0 100 8a8 8 0 0016 0zm-7.5 3.5a.5.5 0 01-1 0V5.707L5.354 7.854a.5.5 0 11-.708-.708l3-3a.5.5 0 01.708 0l3 3a.5.5 0 01-.708.708L8.5 5.707V11.5z" />
+    </svg>
+        </button>
+
+      )}
+      </div>
   
       {/*  Top Arrow  */}
       {/* <a href="#" className="back-to-top">
