@@ -2,6 +2,7 @@ import React, { useRef, useState, useEffect } from 'react';
 import { Form, useActionData} from 'react-router-dom';
 import emailjs from '@emailjs/browser';
 
+
 function Contatti (
     {
     formIntro,
@@ -187,11 +188,14 @@ function Contatti (
             {/* Sezione contatti end*/}
 
             {/* Mappa */}
-          <div className="map" style={{textAlign:'center', margin:'0 -1em 0 -1em'}} >
+          <div className="map" style={{textAlign:'center', margin:'0 -1em -2em -1em' }} >
             {/* <object style={{border:'0', height: '280px', width: '100%'}}data="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d34015.943594576835!2d-106.43242624069771!3d31.677719472407432!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86e75d90e99d597b%3A0x6cd3eb9a9fcd23f1!2sCourtyard+by+Marriott+Ciudad+Juarez!5e0!3m2!1sen!2sbd!4v1533791187584"></object> */}
+
+            <img src="../maps-img.png" alt="immagine statica indirizzo in Google Maps" width="78%" height="82%" ></img>
            
-            <iframe title='indirizzo in Google Maps' src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2783.6933622097254!2d11.730513275249526!3d45.75729301383678!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4778d1e239d01645%3A0x3297ca0dda79d4d2!2sVia%20Ognissanti%2C%2065%2C%2036061%20Bassano%20del%20Grappa%20VI!5e0!3m2!1sit!2sit!4v1705835711370!5m2!1sit!2sit"style={{border:'0', width:'80%', height:'40vh', padding: '2em 0 2em 0'}} allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            {/* <iframe title='indirizzo in Google Maps' src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2783.6933622097254!2d11.730513275249526!3d45.75729301383678!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4778d1e239d01645%3A0x3297ca0dda79d4d2!2sVia%20Ognissanti%2C%2065%2C%2036061%20Bassano%20del%20Grappa%20VI!5e0!3m2!1sit!2sit!4v1705835711370!5m2!1sit!2sit"style={{border:'0', width:'80%', height:'40vh', padding: '2em 0 2em 0'}} allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> */}
           </div>
+          {/* Cookie di funzionalita e di profilazione di Terze Parti - Questo sito utilizza cookie di Google Maps per fornire agli utenti di visualizzare sulla mappa la sede della società. */}
           {/* Mappa end */}
           </div> 
         </div>
