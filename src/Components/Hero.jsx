@@ -44,7 +44,7 @@ function Hero({
        
       <div className="intro-img" >
         <img className='img-fluid'alt={altPic} 
-        style={{width:'350px', height:'500px', position:'relative', marginBottom:'-470px'}}
+        style={{width:'350px', height:'500px', position:'relative', marginBottom:'-460px'}}
         src="../avv-giulio-farronato.png"/>
         </div> 
         </div> 
