@@ -1,7 +1,5 @@
 import Hero from '../Components/Hero'
-import About from '../Components/About'
-import Servizi from '../Components/Servizi'
-import Contatti from '../Components/Contatti'
+
 
 
 function Eng() {

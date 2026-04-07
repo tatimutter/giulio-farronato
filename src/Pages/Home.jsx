@@ -12,19 +12,14 @@ function Home(
 
 {
  
-  const [show, setShow] = useState(Array(7).fill(false));
+
 
 	
 
-	function toggle(index) {
-		const updatedShow = [...show];
-		updatedShow[index] = !updatedShow[index];
-		setShow(updatedShow);
-		
-	  }
+	
 
     const offset = 200;
-    const duration = 500;
+    //const duration = 500;
     const [showButton, setShowButton] = useState(false);
   
     useEffect(() => {

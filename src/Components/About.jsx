@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React from "react";
 function About (
     {
         who,
@@ -12,16 +12,7 @@ function About (
     }
 )  {
 
-  const [show, setShow] = useState(Array(7).fill(false));
-
-	
-
-	function toggle(index) {
-		const updatedShow = [...show];
-		updatedShow[index] = !updatedShow[index];
-		setShow(updatedShow);
-		
-	  }
+  
     
   return (
     <div id="about-section" className="about-area section-padding" >
