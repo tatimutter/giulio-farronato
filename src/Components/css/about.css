@@ -1,0 +1,84 @@
+#about-section .about-area {
+  padding: 80px 0;
+  
+}
+
+#about-section .section-title {
+  font-family: Montserrat, Helvetica, Arial, sans-serif;
+  font-size: 2.2rem; 
+  font-weight: 700; 
+  color: #1a1a2e;
+  margin-bottom: 28px;
+  line-height: 1.3;
+  text-align: center !important;
+}
+
+#about-section .content p {
+  text-align: left;
+   line-height: 1.3;
+}
+
+ #about-section .col-lg-12 {
+  /* max-width: clamp(300px, 100%, 850px); */
+  max-width: clamp(300px,1150px, 850px);
+  margin-left: auto;
+  margin-right: auto;
+  
+}
+
+/* .about-content {
+  max-width: 70%;
+  margin-left: auto ;
+  margin-right: auto ;
+  text-wrap: balance ;
+  hyphens: auto ;
+  word-break: break-word;
+
+} */
+
+.about-lead {
+  font-size: 1.15rem !important;
+  font-weight: 500 !important;
+  color: #2c2c2c !important;
+  line-height: 1.75 !important;
+  margin-bottom: 20px !important;
+}
+
+#about-section .about-body {
+  font-size: 1rem;
+  color: #444;
+  line-height: 1.8;
+  margin-bottom: 16px;
+}
+
+#about-section .about-highlight {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #1a1a2e;
+  margin-top: 8px;
+  margin-bottom: 28px;
+}
+
+#about-section .about-actions {
+  margin-top: 32px;
+}
+
+#about-section .about-image-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding: 40px 0;
+}
+
+#about-section .about-photo {
+  border-radius: 8px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12);
+}
+#about-section .btn-custom {
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: 400;
+  letter-spacing: 0.03em;
+  padding: 10px 24px;
+}
