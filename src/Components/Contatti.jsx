@@ -135,7 +135,7 @@ function Contatti (
                 >
                 <path d="M12 3L2 12h3v8h14v-8h3L12 3m0 4.7c2.1 0 3.8 1.7 3.8 3.8 0 3-3.8 6.5-3.8 6.5s-3.8-3.5-3.8-6.5c0-2.1 1.7-3.8 3.8-3.8m0 2.3a1.5 1.5 0 00-1.5 1.5A1.5 1.5 0 0012 13a1.5 1.5 0 001.5-1.5A1.5 1.5 0 0012 10z" />
                 </svg>
-                  <span className="visually-hidden" style={{paddingLeft:'10px'}}>Via Ognissanti 65, 36061, Bassano del Grappa</span>
+                  <span className="visually-hidden" style={{paddingLeft:'10px'}}>Contrà S. Tomaso, 34, 36100 Vicenza</span>
                  </li>
                  <br />
                 {/* Telefono */}
@@ -191,7 +191,7 @@ function Contatti (
           <div className="map" style={{textAlign:'center', margin:'0 -1em -2em -1em' }} >
             {/* <object style={{border:'0', height: '280px', width: '100%'}}data="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d34015.943594576835!2d-106.43242624069771!3d31.677719472407432!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86e75d90e99d597b%3A0x6cd3eb9a9fcd23f1!2sCourtyard+by+Marriott+Ciudad+Juarez!5e0!3m2!1sen!2sbd!4v1533791187584"></object> */}
 
-            <img src="../maps-img.png" alt="immagine statica indirizzo in Google Maps" width="78%" height="82%" ></img>
+            <img src="../maps-img.png" alt="immagine statica indirizzo in Google Maps" width="80%" height="80%" ></img>
            
             {/* <iframe title='indirizzo in Google Maps' src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2783.6933622097254!2d11.730513275249526!3d45.75729301383678!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4778d1e239d01645%3A0x3297ca0dda79d4d2!2sVia%20Ognissanti%2C%2065%2C%2036061%20Bassano%20del%20Grappa%20VI!5e0!3m2!1sit!2sit!4v1705835711370!5m2!1sit!2sit"style={{border:'0', width:'80%', height:'40vh', padding: '2em 0 2em 0'}} allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> */}
           </div>
@@ -206,7 +206,7 @@ function Contatti (
 				<div className="card-body" style={{paddingTop:'2em'}}>
                     
           <div  className="contact-block">
-          <div style={{textAlign:'center'}}>Vuoi avere più informazioni o hai alcune domande? Puoi compilare questo form, ti contatterò appena possibile.</div>
+          <div style={{textAlign:'center'}}>Vuoi avere più informazioni o hai alcune domande? <br/> Puoi compilare questo form, ti contatterò appena possibile.</div>
         <Form id="contactForm" ref={form} onSubmit={handleSubmit} style={{paddingTop:'20px'}}>
               <div className="row">
                 <div className="col-md-6">
