@@ -63,11 +63,12 @@ function Home(
  
 
  who='Chi sono'
- descr1='Sono avvocato presso il foro di Vicenza ed esperto in diritti umani e protezione internazionale presso la Prefettura di Treviso.'
- descr2='I temi di cui mi occupo principalmente riguardano il diritto di famiglia, dell&#39;immigrazione e della tutela delle persone LGBT+.'
- descr3= 'Ho maturato esperienza presso le giurisdizioni ordinarie, le sezioni specializzate e le giurisdizioni amministrative. In passato sono stato assegnista di ricerca presso l&#39;università di Padova in materia di diritto internazionale.'
- descr4= 'Sono socio delle associazioni ASGI - Associazione Studi Giuridici Immigrazione e Rete Lenford-Avvocatura per i diritti LGBT+ attraverso cui ho conosciuto avvocati e avvocate con cui collaboro frequentemente e dal 2023 sono Osservatore per le condizioni di detenzione e membro del difensore civico per l&#39;associazione Antigone.'       
-descr5= 'Vuoi saperne di più?'
+ descr1='Sono avvocato presso il foro di Vicenza e mi occupo principalmente di temi che riguardano il diritto di famiglia, dell&#39;immigrazione, della tutela delle persone LGBT+ e del diritto penale. '
+ descr2='Ho maturato esperienza presso le giurisdizioni ordinarie, le sezioni specializzate e le giurisdizioni amministrative.'
+ descr3= 'In passato sono stato esperto in diritti umani e protezione internazionale presso la Prefettura di Treviso, assegnista e borsista di ricerca presso l&#39;università di Padova in materia di diritto internazionale.'
+ descr4= 'Attualmente sono consulente con alcuni centri Antidiscriminazione in Veneto in materia civile e tutela contro le discriminazioni per orientamento sessuale e identità di genere e per Veneto Lavoro in materia di diritto dell&#39;immigrazione.' 
+ descr5='Sono socio delle associazioni ASGI - Associazione Studi Giuridici Immigrazione con la quale seguo progetti legati alle prassi illegittime della pubblica amministrazione e Rete Lenford-Avvocatura per i diritti LGBT+ con cui seguo in particolare il tema della tutela delle persone trans e delle persone non binarie.'      
+descr6= 'Vuoi saperne di più?'
  /*  mail='Scrivimi' */
  linkedIn='Visita il mio LinkedIn' 
  />
@@ -76,16 +77,16 @@ descr5= 'Vuoi saperne di più?'
 help='Come posso aiutarti'
 item1='Diritto di Famiglia'
 content1='Mi occupo di tutte le pratiche più comuni del diritto di famiglia: separazioni, divorzi, affidamento e mantenimento dei figli, eredità, riconoscimento del figlio, procedure di interdizione, inabilitazione e nomina di amministratori di sostegno.'
-content1a= 'Ho una particolare esperienza in procedimenti relativi a minori, donne vittime di violenze e abusi e persone in situazioni di svantaggio sociale.' 
-content1b= 'In molti casi, mi sono dovuto occupare di pratiche di diritto di famiglia con risvolti relativi al diritto privato internazionale, materia con cui ho maturato esperienza.'
+content1a= 'Ho una particolare esperienza in procedimenti relativi a minori, donne vittime di violenze e abusi e persone vulnerabili.' 
+content1b= 'In molti casi, mi sono dovuto occupare di pratiche di diritto di famiglia con risvolti relativi al diritto privato internazionale, materia con cui ho maturato esperienza'
 item2='Diritto dell&#39;Immigrazione'
-content2='Ho una lunga esperienza in questo ambito che ho iniziato a seguire fin dagli studi universitari. Mi occupo sia dell&#39;ambito giudiziale che stra giudiziale.'
-content2a= 'Alcuni degli ambiti di cui mi occupo sono rilascio, conversione e rinnovo dei permessi di soggiorno per privati ma anche per aziende (come ad esempio nei casi di lavoratori altamente specializzati, distacchi di azienda o c.d. flussi).'
+content2='Ho maturato una lunga esperienza in questo ambito e mi occupo sia dell&#39;ambito giudiziale che stragiudiziale.'
+content2a= 'Affronto la materia sia in un&#39;ottica di tutela dei diritti umani delle persone migranti che in supporto a privati ed aziende per questioni più amministrative (come ad esempio supporto per lavoratori altamente specializzati, distacchi di azienda o c.d. flussi).'
 content2b= 'Seguo pratiche per il riconoscimento della cittadinanza e la tutela di persone richiedenti protezione internazionale.' 
-content2c='Sono consulente in tematiche di diritto dell&#39;immigrazione per alcune aziende così come per alcuni enti del terzo settore.'
+content2c='Sono consulente in tematiche di diritto dell&#39;immigrazione per alcune aziende del territorio e per alcuni enti del terzo settore.'
 item3='Minoranze e diritti LGBT+'
-content3='Mi sono occupato spesso di casi che includono minoranze e le relative discriminazioni che devono affrontare.'
-content3a='In particolare, per quanto riguarda le persone trans mi occupo di cause di affermazione di genere e rettifica del nome. '/>
+content3='Mi occupo della tutela di minoranze delle relative discriminazioni che devono affrontare.'
+content3a='In particolare, per quanto riguarda le persone trans mi occupo di cause di affermazione di genere e rettifica del nome.'/>
 
 <Contatti 
 

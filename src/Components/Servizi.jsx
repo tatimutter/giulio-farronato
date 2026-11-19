@@ -40,7 +40,7 @@ const Servizi = ({
 							<i className='lni-cog'></i>
 						</div>
 						<div className='services-content'>
-							<h3 style={{ fontSize: "16px", color: "#585b60" }}>{item1}</h3>
+							<h3 style={{ fontSize: "16px", color: "#585b60", fontWeight: "bold" }}>{item1}</h3>
 							<button className='btn btn-custom mt-3' onClick={() => toggle(1)}>
 								{show[1] ? "Leggi di meno" : "Leggi di più"}
 							</button>
@@ -67,7 +67,7 @@ const Servizi = ({
 							<i className='lni-stats-up'></i>
 						</div>
 						<div className='services-content'>
-							<h3 style={{ fontSize: "16px", color: "#585b60" }}>{item2}</h3>
+							<h3 style={{ fontSize: "16px", color: "#585b60", fontWeight: 										"bold"}}>{item2}</h3>
 							<button className='btn btn-custom mt-3' onClick={() => toggle(2)}>
 								{show[2] ? "Leggi di meno" : "Leggi di più"}
 							</button>
@@ -94,7 +94,7 @@ const Servizi = ({
 							<i className='lni-users'></i>
 						</div>
 						<div className='services-content'>
-							<h3 style={{ fontSize: "16px", color: "#585b60" }}>{item3}</h3>
+							<h3 style={{ fontSize: "16px", color: "#585b60", fontWeight: "bold" 									}}>{item3}</h3>
 							<button className='btn btn-custom mt-3' onClick={() => toggle(3)}>
 								{show[3] ? "Leggi di meno" : "Leggi di più"}
 							</button>

@@ -3,7 +3,7 @@ import '../App.css'
 import './css/about.css'
 
 const AboutOneCol = ({
-    who, descr1, descr2, descr3, descr4, descr5, mail, linkedIn
+    who, descr1, descr2, descr3, descr4, descr5, descr6, mail, linkedIn
 }) => {
   return (
     <div id="about-section" className="about-area section-padding">
@@ -24,11 +24,13 @@ const AboutOneCol = ({
                     <br/>  <br/>
                     {descr4} 
                     <br/> <br/>
+                    {descr5} 
+                    <br/> <br/>
                     </p>
                   </div>
                   <div className="row">
                     <div className="about-info col-lg-6 col-md-6 col-s-6 col-xs-12">
-                      <p style={{fontWeight:"bold", fontSize:"larger"}}>{descr5}</p> 
+                      <p style={{fontWeight:"bold", fontSize:"larger"}}>{descr6}</p> 
                     </div>
                     <div className="about-linkedin col-lg-6 col-md-6 col-s-6 col-xs-12">
                       <a href="https://www.linkedin.com/in/giuliofarronato/?originalSubdomain=it" className="btn btn-custom mt-3">{linkedIn}</a>

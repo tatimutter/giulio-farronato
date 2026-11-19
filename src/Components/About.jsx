@@ -8,6 +8,7 @@ function About (
         descr3,
         descr4,
         descr5,
+        descr6,
         mail,
         linkedIn
     }
@@ -29,7 +30,8 @@ return (
               <p className="about-body">{descr2}</p>
               <p className="about-body">{descr3}</p>
               <p className="about-body">{descr4}</p>
-              <p className="about-highlight">{descr5}</p>
+              <p className="about-body">{descr5}</p>
+              <p className="about-highlight">{descr6}</p>
 
               <div className="about-actions">
                 <a href="mailto:info@giuliofarronato.com" className="btn btn-custom">{mail}</a>

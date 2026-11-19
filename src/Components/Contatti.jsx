@@ -120,7 +120,7 @@ function Contatti (
        
        {/* Contatti */}
         <div className="card shadow border-0 rounded-4 mb-5">
-				<div className="card-body" style={{padding:'1em 2em 2.3em 2em'}}>
+				<div className="card-body" style={{padding:'1em 2em 6.35em 2em'}}>
                   
             <ul>
             
@@ -183,12 +183,11 @@ function Contatti (
 					</a>
                 </li>
               </ul>
-            </div>
             
-            {/* Sezione contatti end*/}
+            
 
             {/* Mappa */}
-          <div className="map" style={{textAlign:'center', margin:'0 -1em -2em -1em' }} >
+          <div className="map" style={{textAlign:'center', margin:'3em -1em -2em -1em' }} >
             {/* <object style={{border:'0', height: '280px', width: '100%'}}data="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d34015.943594576835!2d-106.43242624069771!3d31.677719472407432!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86e75d90e99d597b%3A0x6cd3eb9a9fcd23f1!2sCourtyard+by+Marriott+Ciudad+Juarez!5e0!3m2!1sen!2sbd!4v1533791187584"></object> */}
 
             <img src="../maps-img.png" alt="immagine statica indirizzo in Google Maps" width="80%" height="80%" ></img>
@@ -197,16 +196,19 @@ function Contatti (
           </div>
           {/* Cookie di funzionalita e di profilazione di Terze Parti - Questo sito utilizza cookie di Google Maps per fornire agli utenti di visualizzare sulla mappa la sede della società. */}
           {/* Mappa end */}
+        
+        {/* Sezione contatti end*/}
+  
           </div> 
         </div>
-
+      </div>
         {/* Form */} 
         <div className="col-lg-7 col-md-12 col-sm-12" >
         <div className="card shadow border-0 rounded-4 mb-5">
 				<div className="card-body" style={{paddingTop:'2em'}}>
                     
           <div  className="contact-block">
-          <div style={{textAlign:'center'}}>Vuoi avere più informazioni o hai alcune domande? <br/> Puoi compilare questo form, ti contatterò appena possibile.</div>
+          <div style={{textAlign:'center'}}>Vuoi avere più informazioni? <br/> Compila questo form e ti ricontatterò.</div>
         <Form id="contactForm" ref={form} onSubmit={handleSubmit} style={{paddingTop:'20px'}}>
               <div className="row">
                 <div className="col-md-6">
