@@ -22,7 +22,7 @@ function Navbar() {
         exact='true'
         className={({ isActive }) =>
           isActive ? 'active' : 'nav-link'
-        }><img style={{width:'65px'}} src="../logo.svg" alt="logo avvocato Giulio Farronato, rappresentato dalle lettere G e F, di varie tonalità di azzurro, con la F stilizzata come una colonna"/> </NavLink>
+        }><img style={{width:'65px'}} src="../logo.svg" alt="logo dell'avvocato Giulio Farronato, Vicenza. Monogramma GF in tonalità azzurre, con la F stilizzata come una colonna"/> </NavLink>
            
       <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
       <svg fill="none" viewBox="0 0 24 24" height="1em" width="1em" >

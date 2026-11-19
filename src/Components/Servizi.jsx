@@ -45,7 +45,7 @@ const Servizi = ({
 								{show[1] ? "Leggi di meno" : "Leggi di più"}
 							</button>
 						</div>
-						<div style={{ paddingTop: "1.7em", textAlign:"left" }}>
+						<div style={{ paddingTop: "1.7em", textAlign:"center" }}>
 							{show[1] && (
 								<div>
 									{content1}
@@ -72,7 +72,7 @@ const Servizi = ({
 								{show[2] ? "Leggi di meno" : "Leggi di più"}
 							</button>
 						</div>
-						<div style={{ paddingTop: "1.7em", textAlign:"left" }}>
+						<div style={{ paddingTop: "1.7em", textAlign:"center" }}>
 							{show[2] && (
 								<div>
 									{content2}
@@ -100,7 +100,7 @@ const Servizi = ({
 							</button>
 						</div>
 
-						<div style={{ paddingTop: "1.7em", textAlign:"left" }}>
+						<div style={{ paddingTop: "1.7em", textAlign:"center" }}>
 							{show[3] && (
 								<div>
 									{content3}

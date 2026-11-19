@@ -10,7 +10,7 @@ function Footer() {
           <div className="row" style={{paddingTop:'-30em'}}>
            
              
-                  <div className="col-lg-2 col-md-2 col-sm-1"><img style={{width:'50px', }} src="../logo.svg" alt=""></img></div>
+                  <div className="col-lg-2 col-md-2 col-sm-1"><img style={{width:'50px', }} src="../logo.svg" alt="logo dell'avvocato Giulio Farronato, Vicenza. Monogramma GF in tonalità azzurre, con la F stilizzata come una colonna"></img></div>
                   
                   <div id='footer-iva' className="col-lg-10 col-md-10 col-sm-11">
                    <p>Studio legale Avv. Giulio Farronato <br />
