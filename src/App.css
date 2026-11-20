@@ -4612,8 +4612,8 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 @media (max-width: 575px) {
   button.scroll-top {
-    width: 32px;
-    height: 32px;
+    width: 42px;
+    height: 42px;
     right: 14px;
     bottom: 14px;
   }
@@ -4624,3 +4624,20 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   }
 }
 
+/*per navigazione con tastiera*/
+button.scroll-top:focus-visible {
+  outline: 3px solid #1a1a2e !important;
+  outline-offset: 3px;
+}
+
+/*per rimuovere movimento bottone per chi lo imposta da sistema*/
+@media (prefers-reduced-motion: reduce) {
+  button.scroll-top {
+    transition: none;
+  }
+}
+
+button.scroll-top:focus-visible {
+  outline: 3px solid #1a1a2e !important;
+  outline-offset: 3px;
+}
