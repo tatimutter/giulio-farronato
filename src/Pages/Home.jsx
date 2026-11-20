@@ -1,7 +1,7 @@
 import React, {useState, useEffect} from 'react';
 
 import Hero from '../Components/Hero';
-import AboutOneCol from '../Components/AboutOneCol';
+import About from '../Components/About';
 import Servizi from '../Components/Servizi';
 import Contatti from '../Components/Contatti';
 
@@ -11,14 +11,7 @@ function Home(
 ) 
 
 {
- 
-
-
-	
-
-	
-
-    const offset = 200;
+     const offset = 50;
     //const duration = 500;
     const [showButton, setShowButton] = useState(false);
   
@@ -59,17 +52,17 @@ function Home(
    altPic='Piano americano dell&#39;avvocato Giulio Farronato, sorridente. Indossa una camicia bianca' />
 
 
- <AboutOneCol
+ <About
  
 
  who='Chi sono'
- descr1='Sono avvocato presso il foro di Vicenza e mi occupo principalmente di temi che riguardano il diritto di famiglia, dell&#39;immigrazione, della tutela delle persone LGBT+ e del diritto penale. '
+ descr1='Sono avvocato presso il foro di Vicenza e mi occupo principalmente di temi che riguardano il diritto di famiglia, dell&#39;immigrazione, della tutela delle persone LGBT+ e del diritto penale.'
  descr2='Ho maturato esperienza presso le giurisdizioni ordinarie, le sezioni specializzate e le giurisdizioni amministrative.'
  descr3= 'In passato sono stato esperto in diritti umani e protezione internazionale presso la Prefettura di Treviso, assegnista e borsista di ricerca presso l&#39;università di Padova in materia di diritto internazionale.'
  descr4= 'Attualmente sono consulente con alcuni centri Antidiscriminazione in Veneto in materia civile e tutela contro le discriminazioni per orientamento sessuale e identità di genere e per Veneto Lavoro in materia di diritto dell&#39;immigrazione.' 
  descr5='Sono socio delle associazioni ASGI - Associazione Studi Giuridici Immigrazione con la quale seguo progetti legati alle prassi illegittime della pubblica amministrazione e Rete Lenford-Avvocatura per i diritti LGBT+ con cui seguo in particolare il tema della tutela delle persone trans e delle persone non binarie.'      
 descr6= 'Vuoi saperne di più?'
- /*  mail='Scrivimi' */
+ 
  linkedIn='Visita il mio LinkedIn' 
  />
 
@@ -95,18 +88,16 @@ send='Invia messaggio'/>
   
   <div style={{textAlign:'right', paddingRight:'1em'}}>
       {showButton && (
-        <button style={{background: 'transparent',
-          border: 'none' }} onClick={scrollToTop}>
-         <svg
-      fill="#46bbc6"
-      viewBox="0 0 16 16"
-      height="3em"
-      width="3em"
-      
-    >
-      <path d="M16 8A8 8 0 100 8a8 8 0 0016 0zm-7.5 3.5a.5.5 0 01-1 0V5.707L5.354 7.854a.5.5 0 11-.708-.708l3-3a.5.5 0 01.708 0l3 3a.5.5 0 01-.708.708L8.5 5.707V11.5z" />
-    </svg>
-        </button>
+        <button
+  type="button"
+  className={`scroll-top ${showButton ? 'visible' : ''}`}
+  onClick={scrollToTop}
+  aria-label="Torna su"
+>
+  <svg viewBox="0 0 16 16" width="22" height="22" fill="currentColor">
+    <path d="M8 3.293l5.354 5.353a.5.5 0 01-.708.708L8 4.707 3.354 9.354a.5.5 0 01-.708-.708L8 3.293z" />
+  </svg>
+</button>
 
       )}
       </div>

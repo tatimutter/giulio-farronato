@@ -4567,3 +4567,60 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   -webkit-animation-name: rollOut;
   animation-name: rollOut;
 }
+
+.scroll-top {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(10px);
+  transition: opacity .25s, transform .25s, visibility .25s;
+}
+
+.scroll-top.visible {
+  opacity: 1;
+  visibility: visible;
+  transform: none;
+}
+
+/*bottone bianco freccia azzurra*/
+.scroll-top {
+  width: 46px; height: 46px;
+  border-radius: 50%;
+  background: #fff;
+  color: #46bbc6;
+  border: 1px solid #e5e5e5;
+  box-shadow: 0 4px 14px rgba(0,0,0,.18);
+}
+
+/*bottone azzurro freccia bianca*/
+/*.scroll-top {
+  width: 48px; height: 48px;
+  border-radius: 50%;
+  background: #46bbc6;
+  color: #fff;
+  border: 3px solid #fff;
+  box-shadow: 0 4px 14px rgba(0,0,0,.25);
+  }
+  */
+
+@media (max-width: 575px) {
+  button.scroll-top {
+    width: 32px;
+    height: 32px;
+    right: 14px;
+    bottom: 14px;
+  }
+
+  button.scroll-top svg {
+    width: 16px;
+    height: 16px;
+  }
+}
+
